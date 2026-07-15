@@ -1,21 +1,18 @@
-# A7 One Signature V2
+# A7 One Signature V3
 
-Site estático premium e pronto para Vercel.
+Nova versão estática pronta para Vercel.
 
-## Arquivos
-- index.html
-- styles.css
-- script.js
-- vercel.json
-- assets/a7one-logo.png
+## Principais mudanças
+- Hero escuro com a nova headline.
+- Núcleo vivo A7 One com Estratégia, Dados, Tecnologia, Execução, IA e Escala.
+- Dois caminhos: “Já sei o que preciso” e “Ainda não sei por onde começar”.
+- Sala A7 One integrada à narrativa.
+- Serviços diretos para quem já chega decidido.
+- Método A7 em sistema circular.
+- Dani como atendimento e encaminhamento.
+- Rodapé com Instagram, LinkedIn, WhatsApp e e-mail.
+- WhatsApp configurado para +55 11 98824-4380.
 
 ## Publicação
-Faça upload destes arquivos na raiz do repositório `a7one-assinatura`.
-A Vercel publicará automaticamente, sem npm, build ou dependências.
-
-## Direção
-- Sem escritório ou equipe fictícios.
-- Visual editorial vivo, com prata, azul, grafite e áreas claras.
-- Soluções apresentadas em cards retangulares premium.
-- Dani como porta de entrada e encaminhamento, não como consultora estratégica.
-- WhatsApp configurado para +55 11 98824-4380.
+Descompacte o ZIP e envie o conteúdo para a raiz do repositório `a7one-assinatura`.
+Os arquivos existentes com os mesmos nomes serão substituídos.

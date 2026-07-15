@@ -1,12 +1,14 @@
 const phone = "5511988244380";
+
 const messages = {
-  geral: "Olá, Dani! Quero entender como a A7 One pode ajudar minha empresa.",
-  clientes: "Olá, Dani! Quero atrair e converter mais clientes.",
-  site: "Olá, Dani! Quero transformar o site e a presença digital da minha empresa.",
-  automacao: "Olá, Dani! Quero ganhar velocidade com automação e atendimento inteligente.",
-  marca: "Olá, Dani! Quero criar ou reposicionar a marca da minha empresa.",
-  registro: "Olá, Dani! Quero proteger e registrar minha marca.",
-  duvida: "Olá, Dani! Ainda não sei qual solução preciso. Posso explicar o momento da minha empresa?"
+  geral: "Olá, Dani! Quero conversar sobre o próximo passo da minha empresa.",
+  diagnostico: "Olá, Dani! Ainda não sei exatamente o que preciso. Quero explicar o momento da minha empresa e receber um direcionamento.",
+  clientes: "Olá, Dani! Quero falar sobre Marketing & Growth para atrair e converter mais clientes.",
+  site: "Olá, Dani! Quero falar sobre site e presença digital para minha empresa.",
+  automacao: "Olá, Dani! Quero falar sobre automação e atendimento inteligente.",
+  marca: "Olá, Dani! Quero falar sobre marca e posicionamento.",
+  registro: "Olá, Dani! Quero falar sobre registro e proteção de marca.",
+  consultoria: "Olá, Dani! Quero agendar uma conversa de direcionamento estratégico."
 };
 
 document.querySelectorAll("[data-topic]").forEach((link) => {
@@ -16,99 +18,56 @@ document.querySelectorAll("[data-topic]").forEach((link) => {
   link.rel = "noopener";
 });
 
-const revealObserver = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("visible");
-      revealObserver.unobserve(entry.target);
+      observer.unobserve(entry.target);
     }
   });
 }, { threshold: 0.12 });
 
-document.querySelectorAll(".reveal").forEach((item) => revealObserver.observe(item));
+document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
-const progress = document.querySelector(".page-progress");
-window.addEventListener("scroll", () => {
-  const max = document.documentElement.scrollHeight - window.innerHeight;
-  progress.style.width = `${(window.scrollY / max) * 100}%`;
-});
-
-const glow = document.querySelector(".cursor-glow");
-window.addEventListener("mousemove", (event) => {
-  glow.style.opacity = "1";
-  glow.style.left = `${event.clientX}px`;
-  glow.style.top = `${event.clientY}px`;
-});
-
-const words = ["direção.", "estrutura.", "clareza.", "escala."];
+const words = ["estratégia.", "tecnologia.", "execução.", "inteligência.", "método."];
+const word = document.getElementById("word-cycle");
 let wordIndex = 0;
-const wordCycle = document.getElementById("word-cycle");
+
 setInterval(() => {
   wordIndex = (wordIndex + 1) % words.length;
-  wordCycle.animate(
+  word.animate(
     [
-      { opacity: 0, transform: "translateY(10px)", filter: "blur(7px)" },
+      { opacity: 0, transform: "translateY(9px)", filter: "blur(6px)" },
       { opacity: 1, transform: "translateY(0)", filter: "blur(0)" }
     ],
-    { duration: 600, easing: "cubic-bezier(.2,.8,.2,1)" }
+    { duration: 560, easing: "cubic-bezier(.2,.8,.2,1)" }
   );
-  wordCycle.textContent = words[wordIndex];
-}, 2400);
+  word.textContent = words[wordIndex];
+}, 2300);
 
-// Lightweight animated canvas for a living, dimensional hero.
-const canvas = document.getElementById("hero-canvas");
-const ctx = canvas.getContext("2d");
-let particles = [];
+const progress = document.querySelector(".progress");
+window.addEventListener("scroll", () => {
+  const max = document.documentElement.scrollHeight - window.innerHeight;
+  progress.style.width = `${Math.max(0, Math.min(100, (window.scrollY / max) * 100))}%`;
+});
 
-function resizeCanvas() {
-  const rect = canvas.getBoundingClientRect();
-  canvas.width = rect.width * window.devicePixelRatio;
-  canvas.height = rect.height * window.devicePixelRatio;
-  ctx.setTransform(window.devicePixelRatio, 0, 0, window.devicePixelRatio, 0, 0);
-  particles = Array.from({ length: window.innerWidth < 720 ? 22 : 46 }, () => ({
-    x: Math.random() * rect.width,
-    y: Math.random() * rect.height,
-    vx: (Math.random() - 0.5) * 0.18,
-    vy: (Math.random() - 0.5) * 0.18,
-    r: Math.random() * 1.4 + 0.6
-  }));
-}
+const cursor = document.querySelector(".cursor-light");
+window.addEventListener("mousemove", (event) => {
+  cursor.style.opacity = "1";
+  cursor.style.left = `${event.clientX}px`;
+  cursor.style.top = `${event.clientY}px`;
+});
 
-function drawCanvas() {
-  const rect = canvas.getBoundingClientRect();
-  ctx.clearRect(0, 0, rect.width, rect.height);
-
-  particles.forEach((p) => {
-    p.x += p.vx;
-    p.y += p.vy;
-    if (p.x < 0 || p.x > rect.width) p.vx *= -1;
-    if (p.y < 0 || p.y > rect.height) p.vy *= -1;
-
-    ctx.beginPath();
-    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-    ctx.fillStyle = "rgba(10,102,255,.28)";
-    ctx.fill();
+const system = document.querySelector(".a7-system");
+if (system) {
+  system.addEventListener("mousemove", (event) => {
+    const rect = system.getBoundingClientRect();
+    const x = (event.clientX - rect.left) / rect.width - 0.5;
+    const y = (event.clientY - rect.top) / rect.height - 0.5;
+    const core = system.querySelector(".system-core");
+    core.style.transform = `perspective(1000px) rotateY(${x * 8}deg) rotateX(${-y * 8}deg)`;
   });
-
-  for (let i = 0; i < particles.length; i++) {
-    for (let j = i + 1; j < particles.length; j++) {
-      const dx = particles[i].x - particles[j].x;
-      const dy = particles[i].y - particles[j].y;
-      const distance = Math.sqrt(dx * dx + dy * dy);
-      if (distance < 135) {
-        ctx.beginPath();
-        ctx.moveTo(particles[i].x, particles[i].y);
-        ctx.lineTo(particles[j].x, particles[j].y);
-        ctx.strokeStyle = `rgba(10,102,255,${(1 - distance / 135) * 0.11})`;
-        ctx.lineWidth = 0.7;
-        ctx.stroke();
-      }
-    }
-  }
-
-  requestAnimationFrame(drawCanvas);
+  system.addEventListener("mouseleave", () => {
+    system.querySelector(".system-core").style.transform = "";
+  });
 }
-
-resizeCanvas();
-drawCanvas();
-window.addEventListener("resize", resizeCanvas);
