@@ -1,18 +1,17 @@
-# A7 One Signature V3.3
+# A7 One Signature V3.4 Final
 
-Reconstrução fiel ao modelo visual aprovado.
+Ajustes finais solicitados.
 
-## Correções principais
-- Logo com transparência real, sem fundo branco.
-- Logo padronizado no topo, núcleo e rodapé.
-- Headline exatamente como aprovada.
-- Layout seguindo a composição do modelo enviado.
-- Dois caminhos de entrada para clientes.
-- Foto da agência no bloco de soluções.
-- Foto institucional na dobra da próxima fase.
-- Método A7 circular.
-- Identidade própria da Dani como Concierge A7 One.
+## Correções
+- Logo oficial aplicado sem tentativa de recorte que alterava o “One”.
+- Núcleo do hero agora usa o símbolo A7 circular, como a metodologia aprovada.
+- Removido o logo duplicado sobre a fotografia da agência.
+- Foto institucional correta no bloco de soluções.
+- Segunda fotografia mantida na dobra sobre a próxima fase.
+- Método A7 reconstruído com cinco etapas: Estratégia, Execução, Análise, Otimização e Escala.
+- Foto oficial da Dani integrada como Concierge A7 One.
+- Rodapé preservado no formato aprovado.
 - Responsivo para desktop e celular.
 
 ## Publicação
-Descompacte e envie o conteúdo interno para a raiz do mesmo repositório `a7one-assinatura`.
+Envie os arquivos internos para a raiz do mesmo repositório `a7one-assinatura`.

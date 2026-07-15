@@ -178,3 +178,146 @@ a{text-decoration:none;color:inherit}
   .closing-copy h2{font-size:38px}
   .footer{grid-template-columns:1fr;text-align:center;padding:25px 0;gap:20px}.footer>span{text-align:center}
 }
+
+
+/* V3.4 FINAL — fidelity corrections */
+.brand img{
+  width:190px;
+  border-radius:0;
+  object-fit:contain;
+  mix-blend-mode:screen;
+}
+.brand small,.closing-brand small{display:none!important}
+
+.method-hero-core{
+  width:205px!important;
+  height:205px!important;
+  border-radius:50%!important;
+  display:flex!important;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  background:radial-gradient(circle at 36% 28%,#273344,#0a0e15 62%,#040609)!important;
+}
+.method-hero-core strong{
+  font-size:68px;
+  line-height:1;
+  letter-spacing:-7px;
+  background:linear-gradient(180deg,#fff,#717b88);
+  -webkit-background-clip:text;
+  color:transparent;
+  position:relative;
+  z-index:2;
+}
+.method-hero-core small{
+  margin-top:15px;
+  font-size:7px;
+  letter-spacing:2.4px;
+  color:#8995a3;
+  position:relative;
+  z-index:2;
+}
+.orbit-core img{display:none!important}
+
+.office-logo{display:none!important}
+
+.method{
+  grid-template-columns:.72fr 1.28fr;
+}
+.method-wheel{
+  position:relative;
+  min-height:620px;
+  display:grid;
+  place-items:center;
+}
+.wheel-glow{
+  position:absolute;
+  width:510px;
+  height:510px;
+  border-radius:50%;
+  background:
+    radial-gradient(circle,transparent 0 27%,rgba(20,105,255,.13) 27.5% 28%,transparent 28.5% 47%,rgba(20,105,255,.22) 47.5% 48%,transparent 48.5%),
+    conic-gradient(from -36deg,rgba(20,105,255,.16),transparent 15%,rgba(20,105,255,.1) 22%,transparent 38%,rgba(20,105,255,.12) 55%,transparent 74%,rgba(20,105,255,.16));
+  border:1px solid rgba(20,105,255,.3);
+  box-shadow:0 0 55px rgba(20,105,255,.12);
+  animation:spin 40s linear infinite;
+}
+.wheel-center{
+  position:absolute;
+  width:135px;height:135px;border-radius:50%;
+  display:grid;place-items:center;
+  font-size:44px;font-weight:700;
+  background:radial-gradient(circle at 35% 28%,#263243,#090d13 66%);
+  border:1px solid rgba(255,255,255,.18);
+  box-shadow:0 28px 80px rgba(0,0,0,.5);
+  z-index:3;
+}
+.wheel-segment{
+  position:absolute;
+  width:190px;
+  min-height:150px;
+  padding:18px;
+  text-align:center;
+  border:1px solid rgba(255,255,255,.16);
+  background:linear-gradient(145deg,rgba(20,27,38,.93),rgba(7,10,15,.97));
+  clip-path:polygon(15% 0,85% 0,100% 18%,88% 100%,12% 100%,0 18%);
+  z-index:2;
+}
+.wheel-segment span{display:block;color:var(--blue);font-size:11px;font-weight:700}
+.wheel-segment strong{display:block;margin:8px 0;font-size:13px}
+.wheel-segment p{margin:0;color:#9ba5b1;font-size:9px;line-height:1.5}
+.ws1{top:0;left:50%;transform:translateX(-50%)}
+.ws2{right:2%;top:25%;transform:rotate(72deg)}
+.ws2>*{transform:rotate(-72deg)}
+.ws3{right:16%;bottom:2%;transform:rotate(144deg)}
+.ws3>*{transform:rotate(-144deg)}
+.ws4{left:16%;bottom:2%;transform:rotate(-144deg)}
+.ws4>*{transform:rotate(144deg)}
+.ws5{left:2%;top:25%;transform:rotate(-72deg)}
+.ws5>*{transform:rotate(72deg)}
+
+.dani-photo{
+  height:390px;
+  position:relative;
+  overflow:hidden;
+  border-radius:18px;
+  border:1px solid var(--line);
+  background:#0b1017;
+}
+.dani-photo img{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;
+  object-position:center 30%;
+  filter:saturate(.88) contrast(1.03);
+}
+.dani-photo-shade{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 50%,rgba(5,7,11,.9));
+}
+.dani-caption{
+  position:absolute;left:25px;bottom:23px;
+  display:flex;flex-direction:column;
+}
+.dani-caption strong{font-size:32px;letter-spacing:-1.5px}
+.dani-caption small{font-size:8px;letter-spacing:2px;color:#a8b2be;margin-top:3px}
+
+.closing-brand img{
+  width:280px;
+  mix-blend-mode:screen;
+}
+
+.phase-photo img{object-position:center 45%}
+
+@media(max-width:1080px){
+  .method-wheel{min-height:650px}
+}
+@media(max-width:720px){
+  .brand img{width:145px}
+  .method-hero-core{width:150px!important;height:150px!important}
+  .method-hero-core strong{font-size:50px}
+  .method-wheel{min-height:560px;transform:scale(.82)}
+  .wheel-glow{width:430px;height:430px}
+  .wheel-segment{width:150px;min-height:130px;padding:13px}
+  .ws2{right:-7%}.ws5{left:-7%}.ws3{right:5%}.ws4{left:5%}
+  .dani-photo{height:440px}
+}
