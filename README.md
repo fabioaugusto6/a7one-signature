@@ -1,24 +1,21 @@
-# A7 One Signature Static V1
+# A7 One Signature V2
 
-Versão visual nova da A7 One, sem Next.js, npm ou dependências.
+Site estático premium e pronto para Vercel.
 
-## Por que esta versão não dá erro de npm
-Ela é 100% estática:
+## Arquivos
 - index.html
 - styles.css
 - script.js
-- assets/
+- vercel.json
+- assets/a7one-logo.png
 
-A Vercel publica diretamente, sem instalar pacotes.
+## Publicação
+Faça upload destes arquivos na raiz do repositório `a7one-assinatura`.
+A Vercel publicará automaticamente, sem npm, build ou dependências.
 
-## Importante para substituir o projeto anterior
-Apague do GitHub os arquivos antigos:
-- app/
-- components/
-- package.json
-- package-lock.json
-- next.config.*
-- next-env.d.ts
-- tsconfig.json
-
-Depois envie somente os arquivos desta pasta.
+## Direção
+- Sem escritório ou equipe fictícios.
+- Visual editorial vivo, com prata, azul, grafite e áreas claras.
+- Soluções apresentadas em cards retangulares premium.
+- Dani como porta de entrada e encaminhamento, não como consultora estratégica.
+- WhatsApp configurado para +55 11 98824-4380.

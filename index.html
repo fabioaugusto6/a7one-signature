@@ -2,199 +2,245 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#030507">
-  <meta name="description" content="A7 One — Marketing, Growth e Inteligência Artificial.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e9ebee">
+  <meta name="description" content="A7 One — Marketing, Growth e Inteligência Artificial aplicados ao crescimento de negócios.">
   <title>A7 One — Marketing • Growth • AI</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div class="noise"></div>
-  <div class="circuit-line"></div>
+  <div class="page-progress" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
 
-  <header class="header">
-    <a href="#inicio" class="brand"><img src="./assets/a7one-logo.png" alt="A7 One"></a>
-    <nav>
-      <a href="#visao">Visão</a>
+  <header class="topbar">
+    <a class="logo" href="#inicio" aria-label="A7 One">
+      <img src="./assets/a7one-logo.png" alt="A7 One — Marketing Growth AI">
+    </a>
+
+    <nav aria-label="Navegação principal">
+      <a href="#direcao">Direção</a>
       <a href="#solucoes">Soluções</a>
-      <a href="#experiencia">Experiência</a>
+      <a href="#metodo">Método</a>
     </nav>
-    <a class="header-cta" data-topic="geral" href="#">Falar com a Dani <span>↗</span></a>
+
+    <a class="top-cta" data-topic="geral" href="#">
+      Conversar <span>↗</span>
+    </a>
   </header>
 
   <main>
-    <section class="hero" id="inicio">
-      <div class="hero-grid"></div>
-      <div class="hero-glow glow-a"></div>
-      <div class="hero-glow glow-b"></div>
+    <section id="inicio" class="hero">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-light light-one"></div>
+      <div class="hero-light light-two"></div>
 
       <div class="hero-copy reveal">
-        <div class="eyebrow"><i></i> MARKETING • GROWTH • AI</div>
-        <h1>Crescer não é<br>fazer mais.</h1>
-        <h2>É construir <span id="word-cycle">direção.</span></h2>
-        <p>A A7 One conecta estratégia, marketing, tecnologia e inteligência artificial para transformar crescimento em estrutura.</p>
+        <p class="overline">MARKETING • GROWTH • AI</p>
+
+        <h1>
+          Sua empresa já cresceu até aqui.
+          <span>Agora ela precisa crescer com <em id="word-cycle">direção.</em></span>
+        </h1>
+
+        <p class="hero-lead">
+          Estratégia, marketing, tecnologia e inteligência artificial conectados
+          para transformar esforço em crescimento estruturado.
+        </p>
+
         <div class="hero-actions">
-          <a class="button primary" data-topic="diagnostico" href="#">Descobrir meu próximo passo</a>
-          <a class="button ghost" href="#solucoes">Ver como podemos ajudar</a>
-        </div>
-        <div class="hero-proof">
-          <span>Estratégia antes da ferramenta</span>
-          <span>Execução conectada ao resultado</span>
+          <a class="button dark" href="#solucoes">Ver como podemos ajudar</a>
+          <a class="button outline" data-topic="geral" href="#">Começar uma conversa</a>
         </div>
       </div>
 
-      <div class="signature-object reveal">
-        <div class="orbit orbit-a"></div>
-        <div class="orbit orbit-b"></div>
-        <div class="metal-panel">
-          <div class="shine"></div>
+      <div class="hero-object reveal" aria-hidden="true">
+        <div class="object-ring ring-one"></div>
+        <div class="object-ring ring-two"></div>
+        <div class="object-ring ring-three"></div>
+
+        <div class="brand-sculpture">
+          <div class="sculpture-glint"></div>
           <img src="./assets/a7one-logo.png" alt="">
-          <div class="energy"></div>
-          <small>ESTRATÉGIA PARA A PRÓXIMA FASE</small>
+          <p>NEGÓCIOS EM MOVIMENTO</p>
         </div>
-        <span class="tag tag-a">ESTRATÉGIA</span>
-        <span class="tag tag-b">TECNOLOGIA</span>
-        <span class="tag tag-c">INTELIGÊNCIA ARTIFICIAL</span>
+
+        <span class="floating-label label-a">ESTRATÉGIA</span>
+        <span class="floating-label label-b">CRESCIMENTO</span>
+        <span class="floating-label label-c">INTELIGÊNCIA</span>
+      </div>
+
+      <div class="hero-bottom">
+        <span>Role para descobrir</span>
+        <i></i>
       </div>
     </section>
 
-    <section class="vision section" id="visao">
-      <div class="section-label reveal">01 / VISÃO</div>
-      <div class="vision-head">
-        <h2 class="reveal">O próximo nível não começa com uma ferramenta.</h2>
-        <p class="reveal">Começa quando visão, operação e tecnologia passam a trabalhar na mesma direção.</p>
+    <section id="direcao" class="statement">
+      <div class="statement-number reveal">01</div>
+      <div class="statement-copy reveal">
+        <p class="overline">A DIFERENÇA</p>
+        <h2>
+          Vender mais é crescimento.
+          <span>Continuar crescendo é construção.</span>
+        </h2>
+      </div>
+      <p class="statement-text reveal">
+        A A7 One entra quando marketing isolado já não basta. Organizamos visão,
+        presença, tecnologia e execução para que a próxima fase não dependa apenas
+        de mais esforço.
+      </p>
+    </section>
+
+    <section id="solucoes" class="solutions">
+      <div class="section-heading reveal">
+        <p class="overline">ONDE ENTRAMOS</p>
+        <h2>O que precisa mudar para sua empresa avançar?</h2>
+        <p>
+          Escolha o objetivo. A conversa começa pela necessidade do negócio,
+          não por um pacote pronto.
+        </p>
       </div>
 
-      <div class="journey">
-        <article class="reveal">
+      <div class="solution-grid">
+        <a class="solution-card featured reveal" data-topic="clientes" href="#">
+          <span class="card-index">01</span>
+          <div class="card-symbol arrow-symbol">↗</div>
+          <h3>Atrair e converter mais clientes</h3>
+          <p>Marketing, mídia, conteúdo e jornada comercial trabalhando na mesma direção.</p>
+          <b>Marketing & Growth <i>↗</i></b>
+        </a>
+
+        <a class="solution-card reveal" data-topic="site" href="#">
+          <span class="card-index">02</span>
+          <div class="card-symbol window-symbol"></div>
+          <h3>Transformar presença digital em valor</h3>
+          <p>Sites e experiências digitais que apresentam, posicionam e convertem.</p>
+          <b>Web & Conversão <i>↗</i></b>
+        </a>
+
+        <a class="solution-card reveal" data-topic="automacao" href="#">
+          <span class="card-index">03</span>
+          <div class="card-symbol flow-symbol"></div>
+          <h3>Ganhar velocidade sem perder qualidade</h3>
+          <p>Automação, atendimento inteligente e processos organizados.</p>
+          <b>Tecnologia & IA <i>↗</i></b>
+        </a>
+
+        <a class="solution-card reveal" data-topic="marca" href="#">
+          <span class="card-index">04</span>
+          <div class="card-symbol brand-symbol">A</div>
+          <h3>Construir uma marca que seja reconhecida</h3>
+          <p>Posicionamento, identidade e linguagem para aumentar percepção de valor.</p>
+          <b>Branding <i>↗</i></b>
+        </a>
+
+        <a class="solution-card reveal" data-topic="registro" href="#">
+          <span class="card-index">05</span>
+          <div class="card-symbol shield-symbol"></div>
+          <h3>Proteger o que sua empresa está construindo</h3>
+          <p>Registro de marca com acompanhamento especializado e visão estratégica.</p>
+          <b>Proteção de Marca <i>↗</i></b>
+        </a>
+
+        <a class="solution-card open-card reveal" data-topic="duvida" href="#">
+          <span class="card-index">06</span>
+          <div class="card-symbol dots-symbol">•••</div>
+          <h3>Ainda não sabe por onde começar?</h3>
+          <p>Conte o momento da empresa. A Dani identifica a necessidade e encaminha sua conversa.</p>
+          <b>Falar com a Dani <i>↗</i></b>
+        </a>
+      </div>
+    </section>
+
+    <section id="metodo" class="method">
+      <div class="method-intro reveal">
+        <p class="overline">COMO TRABALHAMOS</p>
+        <h2>Da necessidade à execução, sem desconectar as partes.</h2>
+      </div>
+
+      <div class="method-track">
+        <article class="method-step reveal">
           <span>01</span>
-          <h3>Enxergar</h3>
-          <p>Identificar o que realmente limita o crescimento.</p>
+          <h3>Entender</h3>
+          <p>O cenário, a prioridade e o que está impedindo o avanço.</p>
         </article>
-        <article class="reveal">
+        <article class="method-step reveal">
           <span>02</span>
-          <h3>Decidir</h3>
-          <p>Escolher prioridades e construir uma direção clara.</p>
+          <h3>Direcionar</h3>
+          <p>A combinação certa entre estratégia, marketing e tecnologia.</p>
         </article>
-        <article class="reveal">
+        <article class="method-step reveal">
           <span>03</span>
-          <h3>Executar</h3>
-          <p>Conectar marketing, tecnologia e inteligência artificial.</p>
+          <h3>Construir</h3>
+          <p>A solução com clareza, qualidade e velocidade de execução.</p>
         </article>
-        <article class="active reveal">
+        <article class="method-step reveal">
           <span>04</span>
-          <h3>Escalar</h3>
-          <p>Transformar esforço em processo, previsibilidade e resultado.</p>
+          <h3>Evoluir</h3>
+          <p>Medir, aprender e preparar a próxima fase do crescimento.</p>
         </article>
       </div>
     </section>
 
-    <section class="solutions section" id="solucoes">
-      <div class="solutions-head">
-        <div class="reveal">
-          <div class="section-label">02 / SOLUÇÕES</div>
-          <h2>Qual problema está impedindo sua empresa de avançar?</h2>
+    <section class="thinking">
+      <div class="thinking-line reveal">
+        <span>MARKETING</span>
+        <p>atrai atenção.</p>
+      </div>
+      <div class="thinking-line reveal">
+        <span>TECNOLOGIA</span>
+        <p>organiza movimento.</p>
+      </div>
+      <div class="thinking-line reveal">
+        <span>INTELIGÊNCIA ARTIFICIAL</span>
+        <p>acelera capacidade.</p>
+      </div>
+      <div class="thinking-line final-line reveal">
+        <span>A7 ONE</span>
+        <p>conecta tudo ao negócio.</p>
+      </div>
+    </section>
+
+    <section class="concierge">
+      <div class="concierge-panel reveal">
+        <div class="dani-visual">
+          <div class="dani-orbit orbit-main"></div>
+          <div class="dani-orbit orbit-inner"></div>
+          <div class="dani-core"><i></i></div>
+          <span>ONLINE</span>
         </div>
-        <p class="reveal">Não começamos oferecendo um pacote. Começamos entendendo o que precisa mudar.</p>
-      </div>
 
-      <div class="solution-list">
-        <a class="solution reveal" data-topic="clientes" href="#">
-          <span>01</span>
-          <div><h3>Seu marketing gera oportunidades de verdade?</h3><p>Posicionamento, conteúdo, mídia e estratégia comercial conectados.</p></div>
-          <b>Conversar sobre isso ↗</b>
-        </a>
-        <a class="solution reveal" data-topic="automacao" href="#">
-          <span>02</span>
-          <div><h3>Seu atendimento depende de alguém estar disponível?</h3><p>Automação e IA para responder, organizar e avançar conversas.</p></div>
-          <b>Conversar sobre isso ↗</b>
-        </a>
-        <a class="solution reveal" data-topic="site" href="#">
-          <span>03</span>
-          <div><h3>Seu site apresenta valor ou apenas ocupa um endereço?</h3><p>Experiências digitais premium, rápidas e construídas para converter.</p></div>
-          <b>Conversar sobre isso ↗</b>
-        </a>
-        <a class="solution reveal" data-topic="marca" href="#">
-          <span>04</span>
-          <div><h3>Sua marca é reconhecida pelo que realmente entrega?</h3><p>Identidade, linguagem e posicionamento para aumentar confiança.</p></div>
-          <b>Conversar sobre isso ↗</b>
-        </a>
-        <a class="solution reveal" data-topic="registro" href="#">
-          <span>05</span>
-          <div><h3>O ativo mais importante da sua empresa está protegido?</h3><p>Registro de marca com acompanhamento especializado.</p></div>
-          <b>Conversar sobre isso ↗</b>
-        </a>
-      </div>
-    </section>
-
-    <section class="experience section" id="experiencia">
-      <div class="experience-copy reveal">
-        <div class="section-label">03 / EXPERIÊNCIA</div>
-        <h2>Você explica.<br>A Dani organiza o próximo passo.</h2>
-        <p>Uma conversa direta, guiada e sem formulários intermináveis.</p>
-        <a class="text-link" data-topic="diagnostico" href="#">Começar uma conversa ↗</a>
-      </div>
-
-      <div class="chat reveal">
-        <div class="chat-top"><span><i></i>Dani online</span><small>A7 ONE</small></div>
-        <div class="chat-body">
-          <div class="message user">Minha empresa cresceu, mas o atendimento virou um gargalo.</div>
-          <div class="message dani">Entendi. Hoje vocês perdem mais tempo respondendo, organizando contatos ou acompanhando oportunidades?</div>
-          <div class="typing"><i></i><i></i><i></i></div>
+        <div class="concierge-copy">
+          <p class="overline">PRIMEIRO CONTATO</p>
+          <h2>Você não precisa saber qual serviço contratar.</h2>
+          <p>
+            Conte para a Dani o que sua empresa precisa. Ela identifica o assunto
+            e encaminha a conversa para a equipe certa da A7 One.
+          </p>
+          <a class="button blue" data-topic="geral" href="#">Conversar com a Dani</a>
         </div>
-        <div class="chat-bottom"><span>Contexto preservado</span><a data-topic="automacao" href="#">Abrir WhatsApp ↗</a></div>
       </div>
     </section>
 
-    <section class="pillars section">
-      <div class="section-label reveal">04 / COMO PENSAMOS</div>
-      <h2 class="reveal">Três competências. Uma única direção.</h2>
-      <div class="pillar-grid">
-        <article class="reveal"><span>01</span><div class="icon target"></div><h3>Estratégia</h3><p>Clareza para escolher o que fazer — e o que não fazer.</p></article>
-        <article class="reveal"><span>02</span><div class="icon system"></div><h3>Tecnologia</h3><p>Estrutura para reduzir atrito e ganhar velocidade.</p></article>
-        <article class="reveal"><span>03</span><div class="icon ai"></div><h3>Inteligência Artificial</h3><p>Capacidade para atender, organizar e aprender em escala.</p></article>
-      </div>
-    </section>
-
-    <section class="automation section reveal">
-      <div class="automation-visual">
-        <div class="pulse"></div>
-        <div class="core"><strong>24/7</strong><small>ATENDIMENTO</small></div>
-      </div>
-      <div>
-        <div class="section-label">AUTOMAÇÃO APLICADA</div>
-        <h2>Seu atendimento pode continuar mesmo quando sua equipe para.</h2>
-        <p>A automação aparece como resposta a um problema real — não como um produto solto no meio da página.</p>
-        <a class="button primary" data-topic="automacao" href="#">Automatizar meu atendimento</a>
-      </div>
-    </section>
-
-    <section class="final section">
-      <div class="final-glow"></div>
-      <div class="reveal">
-        <div class="section-label">05 / PRÓXIMA DECISÃO</div>
-        <h2>O próximo passo da sua empresa pode começar com uma conversa.</h2>
-        <p>Conte para a Dani o que está acontecendo. A gente organiza o caminho.</p>
-        <a class="button primary" data-topic="geral" href="#">Falar com a Dani agora</a>
-      </div>
-      <div class="dani-card reveal">
-        <div class="dani-orb"><i></i></div>
-        <strong>Dani</strong>
-        <span>Atendimento A7 One</span>
-        <small><i></i> online agora</small>
+    <section class="final-cta">
+      <div class="final-word reveal">NEXT</div>
+      <div class="final-copy reveal">
+        <p class="overline">A PRÓXIMA FASE</p>
+        <h2>O crescimento muda quando estratégia e execução passam a andar juntas.</h2>
+        <a class="button dark" data-topic="geral" href="#">Começar agora</a>
       </div>
     </section>
   </main>
 
   <footer>
     <img src="./assets/a7one-logo.png" alt="A7 One">
-    <div>
+    <div class="footer-links">
       <a href="mailto:contato@a7one.com.br">contato@a7one.com.br</a>
-      <a href="https://www.instagram.com/a7one.ai/" target="_blank">Instagram</a>
-      <a href="https://www.linkedin.com/company/a7one/" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/a7one.ai/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/company/a7one/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
     <small>© 2026 A7 One — Marketing • Growth • AI</small>
   </footer>
