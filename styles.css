@@ -1036,3 +1036,103 @@ a{text-decoration:none;color:inherit}
     display:none;
   }
 }
+
+
+/* V4.2 — headline lock + full-bleed institutional photo */
+
+/* Lock approved headline lines on desktop */
+.hero-title .hero-line,
+.hero-title .hero-subline{
+  white-space:nowrap!important;
+}
+.hero-title{
+  max-width:760px!important;
+}
+.hero-title .hero-line{
+  font-size:.96em!important;
+}
+.hero-title .hero-subline{
+  font-size:.88em!important;
+}
+
+/* Make the second institutional photo full-width and place copy over it */
+.phase-full{
+  width:100%!important;
+  max-width:none!important;
+  min-height:680px!important;
+  margin:0!important;
+  padding:0 max(24px,calc((100vw - var(--max))/2))!important;
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  align-items:center!important;
+  position:relative!important;
+  overflow:hidden!important;
+  border-bottom:1px solid var(--line)!important;
+  background:
+    linear-gradient(90deg,rgba(5,7,11,.14) 0%,rgba(5,7,11,.28) 42%,rgba(5,7,11,.82) 68%,rgba(5,7,11,.98) 100%),
+    url("./assets/office-main.jpg?v=1784145007") center center / cover no-repeat!important;
+}
+.phase-full .phase-photo{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  min-height:0!important;
+  border-radius:0!important;
+  opacity:0!important;
+  pointer-events:none!important;
+}
+.phase-full .phase-copy{
+  grid-column:2!important;
+  position:relative!important;
+  z-index:2!important;
+  padding:90px 0 90px 70px!important;
+  max-width:720px!important;
+}
+.phase-full .phase-copy h2{
+  text-shadow:0 3px 18px rgba(0,0,0,.65);
+}
+.phase-full .phase-copy p{
+  text-shadow:0 2px 12px rgba(0,0,0,.7);
+}
+
+/* First institutional image remains full and uninterrupted */
+.office-panel{
+  border-radius:0!important;
+  margin:0!important;
+}
+.solutions{
+  grid-template-columns:.95fr 1.05fr!important;
+}
+
+@media(max-width:1080px){
+  .hero-title .hero-line,
+  .hero-title .hero-subline{
+    white-space:normal!important;
+  }
+  .phase-full{
+    min-height:620px!important;
+    grid-template-columns:1fr!important;
+    background:
+      linear-gradient(180deg,rgba(5,7,11,.12) 0%,rgba(5,7,11,.46) 48%,rgba(5,7,11,.96) 100%),
+      url("./assets/office-main.jpg?v=1784145007") center center / cover no-repeat!important;
+  }
+  .phase-full .phase-copy{
+    grid-column:1!important;
+    align-self:end!important;
+    padding:260px 28px 65px!important;
+    max-width:760px!important;
+  }
+}
+@media(max-width:720px){
+  .hero-title .hero-line,
+  .hero-title .hero-subline{
+    white-space:normal!important;
+  }
+  .phase-full{
+    min-height:560px!important;
+  }
+  .phase-full .phase-copy{
+    padding:240px 22px 52px!important;
+  }
+}
