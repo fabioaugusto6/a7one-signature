@@ -536,3 +536,89 @@ a{text-decoration:none;color:inherit}
   .brand img{width:138px!important}
   .closing-brand img{width:205px!important}
 }
+
+
+/* V3.7 — definitive logo and Dani fixes */
+.brand,
+.closing-brand{
+  background:transparent!important;
+  box-shadow:none!important;
+}
+.brand img,
+.closing-brand img{
+  display:block!important;
+  background:transparent!important;
+  mix-blend-mode:normal!important;
+  filter:none!important;
+  object-fit:contain!important;
+}
+.brand img{
+  width:172px!important;
+  max-height:58px!important;
+}
+.closing-brand img{
+  width:238px!important;
+  max-height:96px!important;
+}
+.brand small,
+.closing-brand small{
+  display:none!important;
+}
+
+.method-hero-core img,
+.disc-center img{
+  display:block!important;
+  background:transparent!important;
+  mix-blend-mode:normal!important;
+  filter:drop-shadow(0 8px 20px rgba(0,0,0,.45))!important;
+  object-fit:contain!important;
+}
+.method-hero-core img{
+  width:74%!important;
+  height:74%!important;
+}
+.disc-center img{
+  width:72%!important;
+  height:72%!important;
+}
+
+/* Dani must always render; no reveal dependency */
+.dani-photo-small{
+  display:block!important;
+  opacity:1!important;
+  visibility:visible!important;
+  transform:none!important;
+  position:relative!important;
+  min-height:310px!important;
+  max-width:310px!important;
+  overflow:hidden!important;
+  border-radius:18px!important;
+  border:1px solid rgba(255,255,255,.12)!important;
+  background:#0b1017!important;
+}
+.dani-photo-small img{
+  display:block!important;
+  opacity:1!important;
+  visibility:visible!important;
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center 38%!important;
+}
+.dani-photo-shade{
+  position:absolute!important;
+  inset:0!important;
+  background:linear-gradient(180deg,transparent 58%,rgba(5,7,11,.9))!important;
+  z-index:1!important;
+}
+.dani-caption{
+  z-index:2!important;
+}
+
+@media(max-width:720px){
+  .brand img{width:140px!important;max-height:48px!important}
+  .closing-brand img{width:205px!important}
+  .dani-photo-small{max-width:100%!important;min-height:390px!important}
+}

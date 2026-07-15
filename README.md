@@ -1,13 +1,14 @@
-# A7 One Signature V3.6 Final
+# A7 One Signature V3.7 Final
 
-Últimos ajustes aprovados:
+Correções definitivas desta versão:
 
-- Removido “Marketing • Growth • AI” abaixo do logo superior.
-- Símbolo A7 isolado no centro da esfera principal.
-- Símbolo A7 isolado no centro do Método A7.
-- Foto oficial da Dani aplicada na seção de atendimento.
-- Rodapé com somente o logo A7 One, sem assinatura inferior.
+- Logo superior com transparência real e sem fundo preto.
+- Logo superior sem “Marketing • Growth • AI”.
+- Símbolo A7 transparente no centro da primeira esfera.
+- Símbolo A7 transparente no centro do Método A7.
+- Foto da Dani aplicada diretamente e sem depender da animação de entrada.
+- Logo do rodapé transparente e sem “Marketing • Growth • AI”.
 - Todo o restante do layout foi preservado.
 
 ## Publicação
-Descompacte e envie apenas o conteúdo interno para a raiz do repositório `a7one-assinatura`.
+Descompacte o arquivo e envie somente o conteúdo interno para a raiz do repositório `a7one-assinatura`.
