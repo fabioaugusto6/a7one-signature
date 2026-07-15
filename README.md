@@ -1,14 +1,13 @@
-# A7 One Signature V3.5 Corrigida
+# A7 One Signature V3.6 Final
 
-Correções finais solicitadas:
+Últimos ajustes aprovados:
 
-- Logo oficial A7 One no centro da primeira dobra.
-- Foto limpa da sala na segunda dobra, sem texto de post.
-- Terceira dobra preservada.
-- Método A7 reconstruído, legível e sem sobreposição.
-- Dani menor, elegante e identificada como Concierge A7 One.
-- Ícones reconhecíveis de Instagram, LinkedIn e WhatsApp no rodapé.
-- Responsivo para desktop e celular.
+- Removido “Marketing • Growth • AI” abaixo do logo superior.
+- Símbolo A7 isolado no centro da esfera principal.
+- Símbolo A7 isolado no centro do Método A7.
+- Foto oficial da Dani aplicada na seção de atendimento.
+- Rodapé com somente o logo A7 One, sem assinatura inferior.
+- Todo o restante do layout foi preservado.
 
 ## Publicação
-Descompacte e envie o conteúdo interno para a raiz do mesmo repositório `a7one-assinatura`.
+Descompacte e envie apenas o conteúdo interno para a raiz do repositório `a7one-assinatura`.

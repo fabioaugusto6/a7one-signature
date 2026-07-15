@@ -470,3 +470,69 @@ a{text-decoration:none;color:inherit}
   .mc5{left:-4%;top:23%}
   .dani-photo-small{height:360px!important;max-width:100%}
 }
+
+
+/* V3.6 FINAL — final brand cleanup */
+.brand small,
+.closing-brand small,
+.brand::after,
+.closing-brand::after{
+  display:none!important;
+  content:none!important;
+}
+
+.brand{
+  gap:0!important;
+}
+.brand img{
+  width:170px!important;
+  height:auto!important;
+  object-fit:contain!important;
+  margin:0!important;
+}
+
+.method-hero-core img,
+.disc-center img{
+  display:block!important;
+  width:78%!important;
+  height:78%!important;
+  object-fit:contain!important;
+  mix-blend-mode:screen;
+  filter:drop-shadow(0 8px 18px rgba(0,0,0,.35));
+}
+
+.method-hero-core{
+  padding:22px!important;
+}
+
+.disc-center{
+  padding:20px!important;
+}
+
+.dani-photo-small{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  overflow:hidden!important;
+  background:#0b1017!important;
+}
+.dani-photo-small img{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center 34%!important;
+}
+
+.closing-brand img{
+  width:235px!important;
+  height:auto!important;
+  object-fit:contain!important;
+}
+
+@media(max-width:720px){
+  .brand img{width:138px!important}
+  .closing-brand img{width:205px!important}
+}
