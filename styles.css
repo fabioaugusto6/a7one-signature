@@ -1492,3 +1492,51 @@ a{text-decoration:none;color:inherit}
     font-size: 30px !important;
   }
 }
+
+
+/* =========================================================
+   V4.5 — MOBILE-ONLY FINAL POLISH
+   Desktop remains unchanged.
+   ========================================================= */
+
+.dani-text-mobile{
+  display:none;
+}
+
+@media (max-width: 720px){
+
+  /* Dani: alternate mobile-only message */
+  .dani-text-desktop{
+    display:none!important;
+  }
+
+  .dani-text-mobile{
+    display:inline!important;
+  }
+
+  /* Footer: center only on mobile */
+  .footer{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    justify-content:center!important;
+    text-align:center!important;
+    gap:18px!important;
+    padding:28px 14px!important;
+  }
+
+  .footer small,
+  .footer > span{
+    width:100%!important;
+    text-align:center!important;
+  }
+
+  .footer .socials{
+    width:100%!important;
+    display:flex!important;
+    justify-content:center!important;
+    align-items:center!important;
+    gap:16px!important;
+    margin:0 auto!important;
+  }
+}
