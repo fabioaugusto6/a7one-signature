@@ -1,14 +1,12 @@
-# A7 One Signature V3.7 Final
+# A7 One Signature V3.8 Final
 
-Correções definitivas desta versão:
+Últimos refinamentos:
 
-- Logo superior com transparência real e sem fundo preto.
-- Logo superior sem “Marketing • Growth • AI”.
-- Símbolo A7 transparente no centro da primeira esfera.
-- Símbolo A7 transparente no centro do Método A7.
-- Foto da Dani aplicada diretamente e sem depender da animação de entrada.
-- Logo do rodapé transparente e sem “Marketing • Growth • AI”.
+- Palavras da esfera principal aumentadas em aproximadamente 5%.
+- Texto dinâmico “Atravessar esse ponto exige...” aumentado.
+- Textos explicativos do Método A7 ampliados e com maior contraste.
+- Foto da Dani reaplicada com um novo arquivo e renderização forçada.
 - Todo o restante do layout foi preservado.
 
 ## Publicação
-Descompacte o arquivo e envie somente o conteúdo interno para a raiz do repositório `a7one-assinatura`.
+Descompacte e envie somente o conteúdo interno para a raiz do repositório `a7one-assinatura`.
