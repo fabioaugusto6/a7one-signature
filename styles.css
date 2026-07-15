@@ -1136,3 +1136,91 @@ a{text-decoration:none;color:inherit}
     padding:240px 22px 52px!important;
   }
 }
+
+
+/* V4.3 VISUAL — premium meeting-room composition */
+.solutions{
+  grid-template-columns:1fr 1.08fr!important;
+  min-height:585px!important;
+}
+.office-panel{
+  min-height:585px!important;
+  margin:0!important;
+  border-radius:0!important;
+}
+.office-panel>img{
+  object-position:center center!important;
+}
+
+.phase-card{
+  padding:84px 0!important;
+  display:grid!important;
+  grid-template-columns:1.18fr .82fr!important;
+  gap:62px!important;
+  align-items:center!important;
+  border-bottom:1px solid var(--line)!important;
+}
+.phase-card .phase-photo{
+  min-height:610px!important;
+  position:relative!important;
+  overflow:hidden!important;
+  border-radius:22px!important;
+  border:1px solid rgba(255,255,255,.11)!important;
+  box-shadow:0 34px 90px rgba(0,0,0,.34)!important;
+}
+.phase-card .phase-photo img{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+}
+.phase-card .phase-overlay{
+  position:absolute!important;
+  inset:0!important;
+  background:linear-gradient(90deg,rgba(5,7,11,.02),rgba(5,7,11,.08) 65%,rgba(5,7,11,.32))!important;
+}
+.phase-card .phase-copy{
+  padding:20px 0!important;
+  max-width:650px!important;
+}
+.phase-card .phase-copy h2{
+  font-size:clamp(46px,4.4vw,70px)!important;
+  line-height:1.02!important;
+  letter-spacing:-3px!important;
+}
+.phase-card .phase-copy p:last-child{
+  max-width:540px!important;
+}
+.method{
+  padding-top:90px!important;
+}
+
+@media(max-width:1080px){
+  .phase-card{
+    grid-template-columns:1fr!important;
+    gap:38px!important;
+    padding:70px 0!important;
+  }
+  .phase-card .phase-photo{
+    min-height:540px!important;
+  }
+  .phase-card .phase-copy{
+    max-width:800px!important;
+    text-align:left!important;
+  }
+}
+@media(max-width:720px){
+  .phase-card{
+    padding:55px 0!important;
+  }
+  .phase-card .phase-photo{
+    min-height:430px!important;
+    border-radius:16px!important;
+  }
+  .phase-card .phase-copy h2{
+    font-size:41px!important;
+    letter-spacing:-2px!important;
+  }
+}

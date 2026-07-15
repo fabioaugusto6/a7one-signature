@@ -1,13 +1,13 @@
-# A7 One — V4.2 Final
+# A7 One — V4.3 Visual
 
-Correções desta versão:
+Versão criada para visualizar a nova composição das imagens.
 
-- Headline travada nas quebras aprovadas no desktop.
-- Redução sutil da headline para impedir quebra automática.
-- Segunda foto institucional transformada em imagem inteira de fundo.
-- Texto da próxima fase sobreposto à imagem com leitura preservada.
-- Primeira foto institucional mantida inteira.
-- Cache atualizado para forçar a Vercel a carregar esta versão.
+- A primeira imagem institucional usa a recepção/agência em formato amplo.
+- A seção “O jeito que trouxe sua empresa até aqui...” voltou para um layout 60/40.
+- A sala de reunião com o logo grande ocupa a parte visual.
+- O texto permanece à direita.
+- A imagem não fica mais esticada por trás do texto.
+- Todo o restante do site foi preservado.
 
 ## Publicação
 Descompacte e envie somente o conteúdo interno para a raiz do repositório `a7one-assinatura`.
