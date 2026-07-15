@@ -1,18 +1,17 @@
-# A7 One Signature V3
+# A7 One Signature V3.1
 
-Nova versão estática pronta para Vercel.
+Correções e refinamentos sobre a V3.
 
-## Principais mudanças
-- Hero escuro com a nova headline.
-- Núcleo vivo A7 One com Estratégia, Dados, Tecnologia, Execução, IA e Escala.
-- Dois caminhos: “Já sei o que preciso” e “Ainda não sei por onde começar”.
-- Sala A7 One integrada à narrativa.
-- Serviços diretos para quem já chega decidido.
-- Método A7 em sistema circular.
-- Dani como atendimento e encaminhamento.
-- Rodapé com Instagram, LinkedIn, WhatsApp e e-mail.
-- WhatsApp configurado para +55 11 98824-4380.
+## Ajustes desta versão
+- Headline do hero reduzida e com melhor quebra de linha.
+- “Como podemos ajudar hoje?” com quebra controlada.
+- Foto da agência enviada pelo usuário integrada à segunda dobra.
+- Texto aprovado: “O jeito que trouxe sua empresa até aqui pode não ser o mesmo que levará ao próximo nível.”
+- Palavra dinâmica na segunda dobra: estrutura, direção, ritmo e escala.
+- Cards de soluções padronizados, sem apenas um card com fotografia.
+- Rodapé e marca final sem caixa branca.
+- CTA final reformulado e mais claro.
+- Logo mantido sobre fundo escuro para preservar a identidade visual.
 
 ## Publicação
-Descompacte o ZIP e envie o conteúdo para a raiz do repositório `a7one-assinatura`.
-Os arquivos existentes com os mesmos nomes serão substituídos.
+Descompacte e envie o conteúdo para a raiz do mesmo repositório `a7one-assinatura`.

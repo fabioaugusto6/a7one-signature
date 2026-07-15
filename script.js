@@ -71,3 +71,21 @@ if (system) {
     system.querySelector(".system-core").style.transform = "";
   });
 }
+
+
+const roomWords = ["estrutura.", "direção.", "ritmo.", "escala."];
+const roomWord = document.getElementById("room-word");
+let roomWordIndex = 0;
+if (roomWord) {
+  setInterval(() => {
+    roomWordIndex = (roomWordIndex + 1) % roomWords.length;
+    roomWord.animate(
+      [
+        { opacity: 0, transform: "translateY(7px)", filter: "blur(5px)" },
+        { opacity: 1, transform: "translateY(0)", filter: "blur(0)" }
+      ],
+      { duration: 520, easing: "cubic-bezier(.2,.8,.2,1)" }
+    );
+    roomWord.textContent = roomWords[roomWordIndex];
+  }, 2500);
+}
