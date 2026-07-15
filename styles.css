@@ -768,3 +768,166 @@ a{text-decoration:none;color:inherit}
     min-height:390px!important;
   }
 }
+
+
+/* V4 FINAL — typography, spacing and footer polish */
+
+/* Hero hierarchy and line breaks */
+.hero h1{
+  font-size:clamp(52px,5vw,80px)!important;
+  line-height:1.01!important;
+  letter-spacing:-3.6px!important;
+}
+.hero h1 span{
+  margin-top:12px!important;
+}
+
+/* Slightly reduce orbit dominance */
+.orbit-stage{
+  transform:scale(.95);
+  transform-origin:center;
+}
+
+/* Standardize institutional image rhythm */
+.solutions{
+  min-height:590px!important;
+}
+.office-panel{
+  min-height:590px!important;
+}
+.phase-photo{
+  min-height:590px!important;
+}
+.phase{
+  grid-template-columns:1fr 1fr!important;
+  gap:56px!important;
+}
+
+/* Method cards readability */
+.method-card{
+  width:225px!important;
+  min-height:145px!important;
+  padding:20px!important;
+}
+.method-card span{
+  font-size:11px!important;
+}
+.method-card strong{
+  font-size:13.5px!important;
+  letter-spacing:.15px!important;
+}
+.method-card p{
+  font-size:10.5px!important;
+  line-height:1.62!important;
+  color:#c7ced7!important;
+}
+
+/* Principles: make labels readable before the statements */
+.principle{
+  grid-template-columns:.64fr 1.36fr!important;
+}
+.principle span{
+  font-size:12px!important;
+  letter-spacing:2.8px!important;
+  color:#9aa5b2!important;
+  font-weight:700!important;
+}
+.principle.final span{
+  color:var(--blue)!important;
+}
+.principle p{
+  font-size:clamp(34px,3.9vw,58px)!important;
+}
+
+/* Dani readability */
+.dani-caption strong{
+  font-size:31px!important;
+}
+.dani-caption small{
+  font-size:10px!important;
+  letter-spacing:1.8px!important;
+}
+.dani-description{
+  max-width:560px!important;
+  font-size:14px!important;
+  line-height:1.72!important;
+}
+
+/* Footer/social visibility */
+.socials{
+  gap:14px!important;
+}
+.socials a{
+  width:46px!important;
+  height:46px!important;
+  color:#d7dde5!important;
+}
+.socials svg{
+  width:21px!important;
+  height:21px!important;
+}
+.footer{
+  min-height:105px!important;
+  font-size:11px!important;
+  color:#8b96a3!important;
+}
+.footer small,
+.footer>span{
+  font-size:11px!important;
+  line-height:1.5!important;
+}
+.footer>span{
+  letter-spacing:.2px!important;
+}
+
+@media(max-width:1080px){
+  .orbit-stage{
+    transform:scale(.92);
+  }
+  .phase{
+    grid-template-columns:1fr!important;
+  }
+  .office-panel,
+  .phase-photo{
+    min-height:520px!important;
+  }
+}
+
+@media(max-width:720px){
+  .hero h1{
+    font-size:44px!important;
+    letter-spacing:-2.4px!important;
+  }
+  .hero h1 span{
+    font-size:38px!important;
+  }
+  .orbit-stage{
+    transform:scale(.9);
+  }
+  .method-card{
+    width:165px!important;
+    min-height:124px!important;
+    padding:14px!important;
+  }
+  .method-card p{
+    font-size:9.4px!important;
+    line-height:1.55!important;
+  }
+  .principle{
+    grid-template-columns:1fr!important;
+  }
+  .principle span{
+    font-size:11px!important;
+  }
+  .dani-description br{
+    display:none;
+  }
+  .socials a{
+    width:44px!important;
+    height:44px!important;
+  }
+  .footer small,
+  .footer>span{
+    font-size:10.5px!important;
+  }
+}
