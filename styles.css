@@ -931,3 +931,108 @@ a{text-decoration:none;color:inherit}
     font-size:10.5px!important;
   }
 }
+
+
+/* V4.1 — final technical and visual polish */
+
+/* Exact hero composition */
+.hero-title{
+  margin:28px 0 25px!important;
+}
+.hero-title .hero-line,
+.hero-title .hero-subline{
+  display:block;
+}
+.hero-title .hero-line{
+  color:var(--white);
+  font-weight:600;
+}
+.hero-title .hero-subline{
+  color:#8b929c;
+  font-weight:300;
+}
+.hero-title .hero-subline:first-of-type{
+  margin-top:12px;
+}
+
+/* Institutional photos: same visual language */
+.solutions{
+  min-height:560px!important;
+}
+.office-panel{
+  min-height:560px!important;
+  border-radius:18px!important;
+  margin:0 0 0 max(24px,calc((100vw - var(--max))/2))!important;
+}
+.office-panel>img{
+  object-position:center center!important;
+}
+.solution-content{
+  min-height:560px!important;
+}
+
+.phase{
+  grid-template-columns:1fr 1fr!important;
+  gap:56px!important;
+}
+.phase-photo{
+  min-height:560px!important;
+  border-radius:18px!important;
+}
+.phase-photo img{
+  object-position:center center!important;
+}
+
+/* Dani: restore the elegant two-line typography */
+.dani-description{
+  font-size:13px!important;
+  line-height:1.68!important;
+  max-width:620px!important;
+}
+.dani-caption{
+  display:flex!important;
+  flex-direction:column!important;
+}
+.dani-caption strong{
+  font-size:28px!important;
+  line-height:1!important;
+  letter-spacing:-1px!important;
+}
+.dani-caption small{
+  font-size:9px!important;
+  line-height:1.2!important;
+  letter-spacing:1.7px!important;
+  margin-top:5px!important;
+}
+
+/* Footer stays readable without becoming visually heavy */
+.footer small,
+.footer>span{
+  font-size:10px!important;
+}
+.socials a{
+  width:44px!important;
+  height:44px!important;
+}
+.socials svg{
+  width:20px!important;
+  height:20px!important;
+}
+
+@media(max-width:1080px){
+  .office-panel{
+    margin:0!important;
+    border-radius:0!important;
+  }
+  .phase{
+    grid-template-columns:1fr!important;
+  }
+}
+@media(max-width:720px){
+  .hero-title .hero-subline:first-of-type{
+    margin-top:10px;
+  }
+  .dani-description br{
+    display:none;
+  }
+}
