@@ -1,13 +1,23 @@
-# A7 One — V4.3 Visual
+# A7 One — V4.4 Mobile Final
 
-Versão criada para visualizar a nova composição das imagens.
+Correções específicas para celulares:
 
-- A primeira imagem institucional usa a recepção/agência em formato amplo.
-- A seção “O jeito que trouxe sua empresa até aqui...” voltou para um layout 60/40.
-- A sala de reunião com o logo grande ocupa a parte visual.
-- O texto permanece à direita.
-- A imagem não fica mais esticada por trás do texto.
-- Todo o restante do site foi preservado.
+- A seção de soluções agora fica totalmente vertical.
+- A foto da agência ocupa toda a largura no mobile.
+- Os cards de serviços não ficam mais cortados ou fora da tela.
+- O Método A7 foi redesenhado para celular:
+  - esfera centralizada;
+  - cinco etapas empilhadas;
+  - textos totalmente legíveis;
+  - sem sobreposição ou rolagem horizontal.
+- A seção “Estratégia gera direção” foi ajustada para caber corretamente.
+- A sala de reunião ganhou enquadramento próprio para celular.
+- O desktop permanece inalterado.
 
-## Publicação
-Descompacte e envie somente o conteúdo interno para a raiz do repositório `a7one-assinatura`.
+## Como publicar
+
+1. Descompacte o ZIP.
+2. Abra o mesmo repositório `a7one-assinatura` no GitHub.
+3. Envie somente o conteúdo interno do ZIP.
+4. Confirme a substituição dos arquivos existentes.
+5. A Vercel fará a publicação automaticamente.

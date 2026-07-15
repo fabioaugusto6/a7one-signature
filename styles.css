@@ -1224,3 +1224,271 @@ a{text-decoration:none;color:inherit}
     letter-spacing:-2px!important;
   }
 }
+
+
+/* =========================================================
+   V4.4 — MOBILE RESPONSIVE FINAL
+   Corrige Serviços e Método A7 sem alterar o desktop.
+   ========================================================= */
+
+@media (max-width: 720px) {
+
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
+
+  /* ---------- Serviços ---------- */
+  .solutions {
+    display: block !important;
+    width: 100% !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .office-panel {
+    width: 100% !important;
+    min-height: 430px !important;
+    height: 430px !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .office-panel > img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: 42% center !important;
+  }
+
+  .office-shade {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(5,7,11,.04) 0%,
+        rgba(5,7,11,.12) 62%,
+        rgba(5,7,11,.94) 100%
+      ) !important;
+  }
+
+  .solution-content {
+    width: 100% !important;
+    min-height: 0 !important;
+    padding: 42px 20px 58px !important;
+    display: block !important;
+  }
+
+  .solution-content > .eyebrow {
+    text-align: left !important;
+    margin-bottom: 22px !important;
+  }
+
+  .solution-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    width: 100% !important;
+    margin-top: 0 !important;
+  }
+
+  .solution-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 132px !important;
+    padding: 22px !important;
+    grid-template-columns: 48px minmax(0, 1fr) !important;
+    transform: none !important;
+  }
+
+  .solution-card h3 {
+    font-size: 18px !important;
+    line-height: 1.22 !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .solution-card > span {
+    right: 20px !important;
+    bottom: 18px !important;
+  }
+
+  /* ---------- Sala de reunião ---------- */
+  .phase-card {
+    width: calc(100% - 28px) !important;
+    margin: 0 auto !important;
+    padding: 52px 0 62px !important;
+    grid-template-columns: 1fr !important;
+    gap: 34px !important;
+  }
+
+  .phase-card .phase-photo {
+    width: 100% !important;
+    min-height: 400px !important;
+    height: 400px !important;
+    border-radius: 16px !important;
+  }
+
+  .phase-card .phase-photo img {
+    object-position: 62% center !important;
+  }
+
+  .phase-card .phase-copy {
+    padding: 0 4px !important;
+    width: 100% !important;
+  }
+
+  /* ---------- Método A7 ---------- */
+  .method {
+    display: block !important;
+    width: calc(100% - 28px) !important;
+    margin: 0 auto !important;
+    padding: 68px 0 !important;
+    overflow: visible !important;
+  }
+
+  .method-copy {
+    width: 100% !important;
+    text-align: left !important;
+    margin-bottom: 46px !important;
+  }
+
+  .method-copy h2 {
+    font-size: 43px !important;
+    line-height: 1.04 !important;
+    letter-spacing: -2.2px !important;
+  }
+
+  .method-copy > p:last-of-type {
+    margin: 0 !important;
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+  }
+
+  .clean-wheel,
+  .method-wheel {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 14px !important;
+    transform: none !important;
+    overflow: visible !important;
+  }
+
+  .method-disc {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    width: 250px !important;
+    height: 250px !important;
+    margin: 0 auto 20px !important;
+    flex: 0 0 auto !important;
+  }
+
+  .disc-center {
+    width: 108px !important;
+    height: 108px !important;
+  }
+
+  .ring-inner {
+    inset: 39px !important;
+  }
+
+  .method-card,
+  .mc1, .mc2, .mc3, .mc4, .mc5 {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    padding: 21px 20px !important;
+    border-radius: 15px !important;
+    overflow: hidden !important;
+  }
+
+  .method-card span {
+    display: block !important;
+    font-size: 11px !important;
+    margin-bottom: 7px !important;
+  }
+
+  .method-card strong {
+    display: block !important;
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+    margin: 0 0 8px !important;
+  }
+
+  .method-card p {
+    font-size: 13px !important;
+    line-height: 1.55 !important;
+    max-width: none !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  /* ---------- Princípios ---------- */
+  .principles {
+    width: calc(100% - 28px) !important;
+    padding: 54px 0 !important;
+  }
+
+  .principle {
+    display: block !important;
+    padding: 24px 0 !important;
+  }
+
+  .principle span {
+    display: block !important;
+    margin-bottom: 14px !important;
+    font-size: 11px !important;
+  }
+
+  .principle p {
+    font-size: 38px !important;
+    line-height: 1.08 !important;
+    letter-spacing: -2px !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .principle.final p {
+    font-size: 34px !important;
+  }
+
+  /* Evita qualquer elemento absoluto excedendo a viewport */
+  .method *,
+  .solutions * {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  .office-panel {
+    min-height: 390px !important;
+    height: 390px !important;
+  }
+
+  .solution-card {
+    min-height: 125px !important;
+  }
+
+  .method-copy h2 {
+    font-size: 39px !important;
+  }
+
+  .principle p {
+    font-size: 34px !important;
+  }
+
+  .principle.final p {
+    font-size: 30px !important;
+  }
+}
