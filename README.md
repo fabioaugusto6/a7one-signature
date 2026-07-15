@@ -1,17 +1,17 @@
-# A7 One Signature V3.2
+# A7 One Signature V3.3
 
-Versão reconstruída em código seguindo o mockup aprovado.
+Reconstrução fiel ao modelo visual aprovado.
 
-## Mudanças principais
-- Layout escuro seguindo fielmente o projeto visual aprovado.
-- Logo A7 One corrigido e com fundo realmente transparente.
-- Hero com headline aprovada e sistema orbital A7 One.
-- Bloco “Como podemos ajudar hoje?” em dois caminhos.
-- Foto da agência integrada ao bloco de soluções.
-- Todos os cards de solução visualmente consistentes.
+## Correções principais
+- Logo com transparência real, sem fundo branco.
+- Logo padronizado no topo, núcleo e rodapé.
+- Headline exatamente como aprovada.
+- Layout seguindo a composição do modelo enviado.
+- Dois caminhos de entrada para clientes.
+- Foto da agência no bloco de soluções.
+- Foto institucional na dobra da próxima fase.
 - Método A7 circular.
-- Atendimento da Dani como direcionamento.
-- Rodapé com logo correto e redes sociais.
+- Identidade própria da Dani como Concierge A7 One.
 - Responsivo para desktop e celular.
 
 ## Publicação

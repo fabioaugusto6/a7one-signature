@@ -15,50 +15,58 @@
   <div class="progress"></div>
   <div class="cursor-glow"></div>
 
-  <header class="header">
-    <a href="#inicio" class="brand" aria-label="A7 One">
+  <header class="header shell">
+    <a class="brand" href="#inicio" aria-label="A7 One">
       <img src="./assets/a7one-logo.png" alt="A7 One">
+      <small>MARKETING • GROWTH • AI</small>
     </a>
+
     <nav>
       <a href="#metodo">Método A7</a>
       <a href="#solucoes">Soluções</a>
       <a href="#sobre">Sobre</a>
-      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
     </nav>
-    <a href="#" class="header-cta" data-topic="diagnostico">Conversar com a Dani</a>
+
+    <a class="header-cta" href="#" data-topic="diagnostico">Conversar com a Dani</a>
   </header>
 
   <main>
-    <section id="inicio" class="hero section-shell">
+    <section id="inicio" class="hero shell">
       <div class="hero-copy reveal">
         <p class="eyebrow">ESTRATÉGIA • TECNOLOGIA • INTELIGÊNCIA</p>
+
         <h1>
-          Toda empresa<br>
-          chega a um ponto.
-          <span>Poucas descobrem<br>como atravessá-lo.</span>
+          Toda empresa chega a um ponto.
+          <span>Poucas descobrem como atravessá-lo.</span>
         </h1>
+
         <p class="lead">
           A7 One conecta estratégia, tecnologia e inteligência
           para transformar crescimento em estrutura.
         </p>
+
         <div class="actions">
-          <a href="#caminhos" class="button primary">Descobrir meu próximo passo <span>→</span></a>
-          <a href="#solucoes" class="button secondary">Já sei o que preciso</a>
+          <a class="button primary" href="#caminhos">Descobrir meu próximo passo <span>→</span></a>
+          <a class="button secondary" href="#solucoes">Já sei o que preciso</a>
         </div>
+
         <div class="changing-line">
           <span>Atravessar esse ponto exige</span>
           <strong id="word-cycle">estratégia.</strong>
         </div>
       </div>
 
-      <div class="orbit-stage reveal" aria-label="Sistema A7 One">
-        <div class="orbit orbit-1"></div>
-        <div class="orbit orbit-2"></div>
-        <div class="orbit orbit-3"></div>
+      <div class="orbit-stage reveal">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="orbit orbit-c"></div>
+
         <div class="orbit-core">
           <div class="shine"></div>
           <img src="./assets/a7one-logo.png" alt="A7 One">
         </div>
+
         <span class="node n1">ESTRATÉGIA</span>
         <span class="node n2">TECNOLOGIA</span>
         <span class="node n3">EXECUÇÃO</span>
@@ -68,21 +76,22 @@
       </div>
     </section>
 
-    <section id="caminhos" class="choices section-shell">
+    <section id="caminhos" class="choices shell">
       <p class="eyebrow">COMO PODEMOS AJUDAR HOJE?</p>
+
       <div class="choice-grid">
-        <article class="choice dark-card reveal">
-          <div class="choice-icon target-icon"></div>
-          <div>
+        <article class="choice choice-dark reveal">
+          <div class="choice-icon target"><i></i></div>
+          <div class="choice-copy">
             <h2>Já sei o que preciso.</h2>
             <p>Quero falar diretamente sobre um serviço ou uma necessidade específica.</p>
           </div>
           <a href="#solucoes">Ir direto para as soluções <span>→</span></a>
         </article>
 
-        <article class="choice light-card reveal">
-          <div class="choice-icon chat-icon"></div>
-          <div>
+        <article class="choice choice-light reveal">
+          <div class="choice-icon message"><i></i></div>
+          <div class="choice-copy">
             <h2>Ainda não sei<br>por onde começar.</h2>
             <p>Quero entender qual é o próximo passo e como podemos ajudar.</p>
           </div>
@@ -91,38 +100,76 @@
       </div>
     </section>
 
-    <section id="solucoes" class="solution-band">
-      <div class="office-photo reveal">
-        <img src="./assets/a7one-office.jpg" alt="Ambiente A7 One">
-        <div class="photo-overlay"></div>
+    <section id="solucoes" class="solutions">
+      <div class="office-panel reveal">
+        <img src="./assets/office-detail.jpg" alt="Ambiente A7 One">
+        <div class="office-shade"></div>
+        <div class="office-logo">
+          <img src="./assets/a7one-logo.png" alt="">
+          <small>NEGÓCIOS EM MOVIMENTO</small>
+        </div>
       </div>
 
-      <div class="solutions-wrap">
+      <div class="solution-content">
         <p class="eyebrow">VÁ DIRETO PARA A SOLUÇÃO</p>
+
         <div class="solution-grid">
-          <a class="solution-card reveal" href="#" data-topic="clientes">
-            <i class="icon bars"></i><h3>Marketing<br>& Growth</h3><span>→</span>
+          <a href="#" data-topic="clientes" class="solution-card reveal">
+            <div class="service-icon chart"></div>
+            <h3>Marketing<br>& Growth</h3>
+            <span>→</span>
           </a>
-          <a class="solution-card reveal" href="#" data-topic="site">
-            <i class="icon monitor"></i><h3>Sites &<br>Experiência Digital</h3><span>→</span>
+
+          <a href="#" data-topic="site" class="solution-card reveal">
+            <div class="service-icon screen"></div>
+            <h3>Sites &<br>Experiência Digital</h3>
+            <span>→</span>
           </a>
-          <a class="solution-card reveal" href="#" data-topic="automacao">
-            <i class="icon chat"></i><h3>Automação &<br>Atendimento</h3><span>→</span>
+
+          <a href="#" data-topic="automacao" class="solution-card reveal">
+            <div class="service-icon bubbles"></div>
+            <h3>Automação &<br>Atendimento</h3>
+            <span>→</span>
           </a>
-          <a class="solution-card reveal" href="#" data-topic="marca">
-            <i class="icon crown"></i><h3>Marca &<br>Posicionamento</h3><span>→</span>
+
+          <a href="#" data-topic="marca" class="solution-card reveal">
+            <div class="service-icon crown">◇</div>
+            <h3>Marca &<br>Posicionamento</h3>
+            <span>→</span>
           </a>
-          <a class="solution-card reveal" href="#" data-topic="registro">
-            <i class="icon shield"></i><h3>Registro de<br>Marca</h3><span>→</span>
+
+          <a href="#" data-topic="registro" class="solution-card reveal">
+            <div class="service-icon shield"></div>
+            <h3>Registro de<br>Marca</h3>
+            <span>→</span>
           </a>
-          <a class="solution-card accent reveal" href="#" data-topic="consultoria">
-            <i class="icon compass"></i><h3>Direcionamento<br>Estratégico</h3><span>→</span>
+
+          <a href="#" data-topic="consultoria" class="solution-card featured reveal">
+            <div class="service-icon compass"></div>
+            <h3>Direcionamento<br>Estratégico</h3>
+            <span>→</span>
           </a>
         </div>
       </div>
     </section>
 
-    <section id="metodo" class="method section-shell">
+    <section class="phase shell">
+      <div class="phase-photo reveal">
+        <img src="./assets/office-main.jpg" alt="Agência A7 One">
+        <div class="phase-overlay"></div>
+      </div>
+
+      <div class="phase-copy reveal">
+        <p class="eyebrow">A PRÓXIMA FASE EXIGE OUTRA CONSTRUÇÃO</p>
+        <h2>O jeito que trouxe sua empresa até aqui pode não ser o mesmo que levará ao próximo nível.</h2>
+        <p>
+          Quando o negócio muda de fase, estratégia, tecnologia e execução
+          precisam trabalhar juntas.
+        </p>
+      </div>
+    </section>
+
+    <section id="metodo" class="method shell">
       <div class="method-copy reveal">
         <p class="eyebrow">MÉTODO A7</p>
         <h2>Existe uma engenharia por trás do <em>crescimento.</em></h2>
@@ -131,52 +178,71 @@
       </div>
 
       <div class="method-visual reveal">
-        <div class="method-ring mr1"></div>
-        <div class="method-ring mr2"></div>
+        <div class="method-ring r1"></div>
+        <div class="method-ring r2"></div>
         <div class="method-core">A7</div>
-        <span class="method-node mn1">Estratégia</span>
-        <span class="method-node mn2">Tecnologia</span>
-        <span class="method-node mn3">Execução</span>
-        <span class="method-node mn4">Inteligência<br>Artificial</span>
-        <span class="method-node mn5">Dados</span>
-        <span class="method-node mn6">Growth</span>
+
+        <span class="method-node m1">Estratégia</span>
+        <span class="method-node m2">Tecnologia</span>
+        <span class="method-node m3">Execução</span>
+        <span class="method-node m4">Inteligência<br>Artificial</span>
+        <span class="method-node m5">Dados</span>
+        <span class="method-node m6">Growth</span>
       </div>
     </section>
 
-    <section id="sobre" class="principles section-shell">
+    <section id="sobre" class="principles shell">
       <div class="principle reveal"><span>ESTRATÉGIA</span><p>gera direção.</p></div>
       <div class="principle reveal"><span>TECNOLOGIA</span><p>gera velocidade.</p></div>
       <div class="principle reveal"><span>INTELIGÊNCIA</span><p>gera decisões melhores.</p></div>
       <div class="principle final reveal"><span>A7 ONE</span><p>conecta tudo ao negócio.</p></div>
     </section>
 
-    <section class="dani section-shell">
-      <div class="dani-visual reveal">
-        <div class="dani-orbit d1"></div>
-        <div class="dani-orbit d2"></div>
-        <div class="dani-core"><i></i></div>
+    <section id="contato" class="dani shell">
+      <div class="dani-card reveal">
+        <div class="dani-id">
+          <div class="dani-monogram">D</div>
+          <div>
+            <strong>Dani</strong>
+            <small>Concierge A7 One</small>
+          </div>
+        </div>
+
+        <div class="dani-pulse">
+          <div class="pulse p1"></div>
+          <div class="pulse p2"></div>
+          <div class="pulse-core"><i></i></div>
+        </div>
       </div>
+
       <div class="dani-copy reveal">
         <p class="eyebrow">ATENDIMENTO INTELIGENTE</p>
         <h2>Você não precisa saber qual serviço contratar.</h2>
-        <p>A Dani entende o seu momento e direciona você ao especialista certo para o próximo passo.</p>
-        <a class="button primary" data-topic="diagnostico" href="#">Conversar com a Dani <span>→</span></a>
+        <p>
+          A Dani entende o seu momento e direciona você ao especialista certo
+          para o próximo passo.
+        </p>
+        <a href="#" class="button primary" data-topic="diagnostico">Conversar com a Dani <span>→</span></a>
       </div>
+
       <ul class="dani-list reveal">
         <li>Entendimento do seu momento</li>
         <li>Direcionamento ao especialista ideal</li>
         <li>Respostas rápidas e objetivas</li>
-        <li>100% personalizado</li>
+        <li>Atendimento personalizado</li>
       </ul>
     </section>
 
-    <section id="projetos" class="closing section-shell">
+    <section class="closing shell">
       <div class="closing-copy reveal">
-        <h2>Toda empresa<br>chega a um<br><em>próximo nível.</em></h2>
+        <h2>Toda empresa chega a um <em>próximo nível.</em></h2>
       </div>
-      <div class="closing-logo reveal">
+
+      <div class="closing-brand reveal">
         <img src="./assets/a7one-logo.png" alt="A7 One">
+        <small>MARKETING • GROWTH • AI</small>
       </div>
+
       <div class="closing-action reveal">
         <h3>Vamos conversar<br>sobre o seu próximo passo.</h3>
         <a href="#" class="button primary" data-topic="geral">Falar com a Dani <span>→</span></a>
@@ -184,12 +250,12 @@
     </section>
   </main>
 
-  <footer class="footer section-shell">
+  <footer class="footer shell">
     <small>© 2026 A7 One. Todos os direitos reservados.</small>
     <div class="socials">
-      <a href="https://www.instagram.com/a7one.ai/" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
-      <a href="https://www.linkedin.com/company/a7one/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
-      <a href="#" data-topic="geral" aria-label="WhatsApp">◉</a>
+      <a href="https://www.instagram.com/a7one.ai/" target="_blank" rel="noopener">◎</a>
+      <a href="https://www.linkedin.com/company/a7one/" target="_blank" rel="noopener">in</a>
+      <a href="#" data-topic="geral">◉</a>
     </div>
     <span>Alphaville – SP &nbsp;•&nbsp; Taubaté – SP</span>
   </footer>
