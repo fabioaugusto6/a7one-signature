@@ -1,29 +1,29 @@
-# A7 One — V7 Final
+# A7 One — V8 Leadership Final
 
-Versão final consolidada da Home.
+Atualização consolidada para a Home oficial.
 
-## Ajuste principal
-A mesma frase da Dani agora aparece em todos os dispositivos:
+## Nova seção
+- “A visão por trás da A7 One”
+- Foto de Fábio Augusto
+- Cargo: Founder & CEO
+- Copy institucional aprovada
+- CTA para o Método A7
 
-“A Dani é o primeiro passo. Nossa equipe transforma estratégia em resultados.”
+## Tablet / iPad
+- Padronização dos alinhamentos.
+- Hero, próxima fase, Método A7, liderança e Dani com linguagem visual consistente.
+- Método A7 reduzido para evitar sobreposição.
+- Tratamento específico para modo retrato e paisagem.
 
-Aplicada em:
-- desktop;
-- notebook;
-- iPad e tablets;
-- celular.
-
-## Mantido nesta versão
-- responsividade de desktop, tablet e mobile;
-- favicon A7;
-- SEO básico;
-- Open Graph para WhatsApp, LinkedIn e Facebook;
-- ícones sociais centralizados no mobile;
-- correções do Método A7;
-- ajustes das imagens institucionais.
+## Favicon
+- Novo favicon com o símbolo A7 ocupando mais espaço.
+- Arquivos 16px, 32px, ICO, Apple Touch e Android.
+- Cache atualizado.
 
 ## Publicação
 1. Descompacte o ZIP.
-2. Envie somente o conteúdo interno para o mesmo repositório `a7one-assinatura`.
+2. Envie somente o conteúdo interno ao mesmo repositório `a7one-assinatura`.
 3. Substitua os arquivos existentes.
-4. A Vercel fará a publicação automaticamente.
+4. A Vercel publicará automaticamente.
+
+O favicon pode levar alguns minutos ou exigir fechar e reabrir a aba por causa do cache do navegador.

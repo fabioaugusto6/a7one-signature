@@ -1853,3 +1853,244 @@ a{text-decoration:none;color:inherit}
     text-align:center!important;
   }
 }
+
+
+/* =========================================================
+   V8 — LEADERSHIP + TABLET ALIGNMENT + FAVICON POLISH
+   ========================================================= */
+
+.leadership{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:72px;
+  align-items:center;
+  padding-top:110px;
+  padding-bottom:110px;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+
+.leadership-photo{
+  position:relative;
+  min-height:620px;
+  border-radius:24px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.12);
+  background:#080b11;
+}
+
+.leadership-photo img{
+  width:100%;
+  height:100%;
+  min-height:620px;
+  display:block;
+  object-fit:cover;
+  object-position:center center;
+}
+
+.leadership-photo-shade{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(180deg, rgba(3,5,9,.04), rgba(3,5,9,.16)),
+    linear-gradient(90deg, rgba(3,5,9,.06), transparent 42%);
+}
+
+.leadership-copy{
+  max-width:650px;
+}
+
+.leadership-copy h2{
+  margin:20px 0 6px;
+  font-size:clamp(48px,5vw,72px);
+  line-height:.98;
+  letter-spacing:-3px;
+}
+
+.leadership-role{
+  margin:0 0 34px!important;
+  color:#3478ff!important;
+  font-size:18px!important;
+  font-weight:650;
+  letter-spacing:.04em;
+}
+
+.leadership-copy > p:not(.eyebrow):not(.leadership-role){
+  margin:0 0 20px;
+  color:#aab2c0;
+  font-size:18px;
+  line-height:1.75;
+}
+
+.leadership-copy strong{
+  color:#fff;
+  font-weight:650;
+}
+
+.leadership-copy .button{
+  margin-top:18px;
+}
+
+/* Consistent centered language on iPad/tablets */
+@media (min-width:721px) and (max-width:1180px){
+
+  .hero,
+  .phase-card,
+  .method,
+  .dani,
+  .leadership{
+    text-align:center!important;
+  }
+
+  .hero-copy,
+  .phase-copy,
+  .method-copy,
+  .dani-copy,
+  .leadership-copy{
+    margin-left:auto!important;
+    margin-right:auto!important;
+    max-width:760px!important;
+  }
+
+  .hero .actions,
+  .leadership-copy .button,
+  .dani-copy .button{
+    justify-content:center!important;
+  }
+
+  .hero .actions{
+    display:flex!important;
+  }
+
+  .hero .changing-line,
+  .phase-copy .eyebrow,
+  .method-copy .eyebrow,
+  .dani-copy .eyebrow,
+  .leadership-copy .eyebrow{
+    text-align:center!important;
+  }
+
+  .leadership{
+    grid-template-columns:1fr!important;
+    gap:42px!important;
+    padding-top:78px!important;
+    padding-bottom:78px!important;
+  }
+
+  .leadership-photo{
+    width:min(100%,850px)!important;
+    min-height:520px!important;
+    margin:0 auto!important;
+  }
+
+  .leadership-photo img{
+    min-height:520px!important;
+    object-position:center 38%!important;
+  }
+
+  .leadership-copy{
+    width:min(100%,760px)!important;
+  }
+
+  .leadership-copy h2{
+    font-size:clamp(48px,7vw,68px)!important;
+  }
+
+  /* More compact A7 method on tablet */
+  .clean-wheel,
+  .method-wheel{
+    transform:scale(.70)!important;
+    transform-origin:center center!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+}
+
+/* Tablet landscape: keep balanced two-column leadership */
+@media (min-width:960px) and (max-width:1180px) and (orientation:landscape){
+  .leadership{
+    grid-template-columns:.95fr 1.05fr!important;
+    gap:44px!important;
+    text-align:left!important;
+  }
+
+  .leadership-copy,
+  .leadership-copy .eyebrow{
+    text-align:left!important;
+  }
+
+  .leadership-photo{
+    min-height:500px!important;
+  }
+
+  .leadership-photo img{
+    min-height:500px!important;
+  }
+}
+
+/* Mobile */
+@media (max-width:720px){
+
+  .leadership{
+    display:block!important;
+    width:calc(100% - 28px)!important;
+    margin:0 auto!important;
+    padding:66px 0!important;
+    text-align:center!important;
+  }
+
+  .leadership-photo{
+    width:100%!important;
+    min-height:430px!important;
+    height:430px!important;
+    margin-bottom:42px!important;
+    border-radius:18px!important;
+  }
+
+  .leadership-photo img{
+    min-height:430px!important;
+    height:430px!important;
+    object-position:56% center!important;
+  }
+
+  .leadership-copy{
+    width:100%!important;
+    max-width:100%!important;
+  }
+
+  .leadership-copy h2{
+    font-size:48px!important;
+    letter-spacing:-2.5px!important;
+  }
+
+  .leadership-role{
+    font-size:16px!important;
+    margin-bottom:28px!important;
+  }
+
+  .leadership-copy > p:not(.eyebrow):not(.leadership-role){
+    font-size:15px!important;
+    line-height:1.72!important;
+  }
+
+  .leadership-copy .button{
+    width:100%!important;
+    justify-content:center!important;
+  }
+}
+
+@media (max-width:390px){
+  .leadership-photo{
+    min-height:390px!important;
+    height:390px!important;
+  }
+
+  .leadership-photo img{
+    min-height:390px!important;
+    height:390px!important;
+  }
+
+  .leadership-copy h2{
+    font-size:43px!important;
+  }
+}
