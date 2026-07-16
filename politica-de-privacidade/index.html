@@ -11,7 +11,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png">
-  <link rel="stylesheet" href="../styles.css?v=1784229702">
+  <link rel="stylesheet" href="../styles.css?v=1784231502">
 
   <style>
     body.legal-page {
@@ -770,7 +770,96 @@
 
   <footer class="legal-footer shell">
     <span>© 2026 A7 One. Todos os direitos reservados.</span>
-    <a href="/">Voltar para a página inicial</a>
+    <div class="legal-footer-links">
+      <button type="button" class="footer-cookie-settings" data-cookie-settings>Configurações de cookies</button>
+      <a href="/">Voltar para a página inicial</a>
+    </div>
   </footer>
+
+  <div class="cookie-consent" data-cookie-banner hidden>
+    <div class="cookie-consent-copy">
+      <span class="cookie-consent-kicker">PRIVACIDADE E CONTROLE</span>
+      <h2>Sua privacidade é importante.</h2>
+      <p>
+        Usamos cookies necessários para o funcionamento do site e, com sua autorização,
+        cookies de análise, preferências e marketing. Você pode aceitar, recusar os
+        opcionais ou personalizar sua escolha.
+      </p>
+      <a href="/politica-de-privacidade">Leia nossa Política de Privacidade</a>
+    </div>
+
+    <div class="cookie-consent-actions">
+      <button type="button" class="cookie-button cookie-button-secondary" data-cookie-reject>
+        Recusar opcionais
+      </button>
+      <button type="button" class="cookie-button cookie-button-ghost" data-cookie-configure>
+        Configurar
+      </button>
+      <button type="button" class="cookie-button cookie-button-primary" data-cookie-accept>
+        Aceitar todos
+      </button>
+    </div>
+  </div>
+
+  <div class="cookie-modal" data-cookie-modal hidden>
+    <div class="cookie-modal-backdrop" data-cookie-close></div>
+
+    <section class="cookie-modal-panel" role="dialog" aria-modal="true" aria-labelledby="cookie-modal-title">
+      <button type="button" class="cookie-modal-close" data-cookie-close aria-label="Fechar configurações de cookies">×</button>
+
+      <p class="cookie-consent-kicker">PREFERÊNCIAS DE PRIVACIDADE</p>
+      <h2 id="cookie-modal-title">Configurações de cookies</h2>
+      <p class="cookie-modal-intro">
+        Escolha quais categorias a A7 One pode utilizar. Os cookies necessários
+        permanecem sempre ativos para que o site funcione corretamente.
+      </p>
+
+      <div class="cookie-category">
+        <div>
+          <h3>Cookies necessários</h3>
+          <p>Segurança, funcionamento básico e registro das suas preferências.</p>
+        </div>
+        <span class="cookie-always-active">Sempre ativos</span>
+      </div>
+
+      <label class="cookie-category cookie-category-toggle">
+        <div>
+          <h3>Preferências</h3>
+          <p>Permitem lembrar escolhas e personalizar recursos do site.</p>
+        </div>
+        <input type="checkbox" data-cookie-category="preferences">
+        <span class="cookie-toggle" aria-hidden="true"></span>
+      </label>
+
+      <label class="cookie-category cookie-category-toggle">
+        <div>
+          <h3>Estatísticas</h3>
+          <p>Ferramentas como Google Analytics e Microsoft Clarity, quando instaladas.</p>
+        </div>
+        <input type="checkbox" data-cookie-category="analytics">
+        <span class="cookie-toggle" aria-hidden="true"></span>
+      </label>
+
+      <label class="cookie-category cookie-category-toggle">
+        <div>
+          <h3>Marketing</h3>
+          <p>Google Ads, Meta Pixel e outras ferramentas de mensuração de campanhas, quando instaladas.</p>
+        </div>
+        <input type="checkbox" data-cookie-category="marketing">
+        <span class="cookie-toggle" aria-hidden="true"></span>
+      </label>
+
+      <div class="cookie-modal-actions">
+        <button type="button" class="cookie-button cookie-button-secondary" data-cookie-modal-reject>
+          Recusar opcionais
+        </button>
+        <button type="button" class="cookie-button cookie-button-primary" data-cookie-save>
+          Salvar preferências
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <script src="../script.js?v=1784231502"></script>
 </body>
 </html>

@@ -51,3 +51,128 @@ window.addEventListener("mousemove",e=>{
   glow.style.left=`${e.clientX}px`;
   glow.style.top=`${e.clientY}px`;
 });
+
+
+/* =========================================================
+   A7 ONE — COOKIE CONSENT / LGPD
+   ========================================================= */
+(() => {
+  const STORAGE_KEY = "a7one_cookie_consent_v1";
+  const banner = document.querySelector("[data-cookie-banner]");
+  const modal = document.querySelector("[data-cookie-modal]");
+
+  if (!banner || !modal) return;
+
+  const categoryInputs = [...modal.querySelectorAll("[data-cookie-category]")];
+  const settingsButtons = [...document.querySelectorAll("[data-cookie-settings]")];
+
+  const defaultConsent = {
+    necessary: true,
+    preferences: false,
+    analytics: false,
+    marketing: false,
+    updatedAt: null
+  };
+
+  const readConsent = () => {
+    try {
+      const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+      return saved && saved.necessary ? { ...defaultConsent, ...saved } : null;
+    } catch {
+      return null;
+    }
+  };
+
+  const setInputs = consent => {
+    categoryInputs.forEach(input => {
+      input.checked = Boolean(consent[input.dataset.cookieCategory]);
+    });
+  };
+
+  const activateScripts = consent => {
+    document.querySelectorAll('script[type="text/plain"][data-cookie-category]').forEach(script => {
+      const category = script.dataset.cookieCategory;
+      if (!consent[category] || script.dataset.cookieActivated === "true") return;
+
+      const liveScript = document.createElement("script");
+      [...script.attributes].forEach(attribute => {
+        if (!["type", "data-cookie-category", "data-cookie-activated"].includes(attribute.name)) {
+          liveScript.setAttribute(attribute.name, attribute.value);
+        }
+      });
+      liveScript.textContent = script.textContent;
+      script.dataset.cookieActivated = "true";
+      script.after(liveScript);
+    });
+
+    window.dispatchEvent(new CustomEvent("a7one:cookie-consent", { detail: consent }));
+  };
+
+  const saveConsent = consent => {
+    const normalized = {
+      necessary: true,
+      preferences: Boolean(consent.preferences),
+      analytics: Boolean(consent.analytics),
+      marketing: Boolean(consent.marketing),
+      updatedAt: new Date().toISOString()
+    };
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(normalized));
+    banner.hidden = true;
+    modal.hidden = true;
+    document.documentElement.classList.remove("cookie-modal-open");
+    activateScripts(normalized);
+  };
+
+  const openModal = () => {
+    const current = readConsent() || defaultConsent;
+    setInputs(current);
+    modal.hidden = false;
+    document.documentElement.classList.add("cookie-modal-open");
+  };
+
+  const closeModal = () => {
+    modal.hidden = true;
+    document.documentElement.classList.remove("cookie-modal-open");
+  };
+
+  document.querySelector("[data-cookie-accept]")?.addEventListener("click", () => {
+    saveConsent({ preferences: true, analytics: true, marketing: true });
+  });
+
+  document.querySelector("[data-cookie-reject]")?.addEventListener("click", () => {
+    saveConsent(defaultConsent);
+  });
+
+  document.querySelector("[data-cookie-configure]")?.addEventListener("click", openModal);
+
+  document.querySelector("[data-cookie-save]")?.addEventListener("click", () => {
+    const selected = { ...defaultConsent };
+    categoryInputs.forEach(input => {
+      selected[input.dataset.cookieCategory] = input.checked;
+    });
+    saveConsent(selected);
+  });
+
+  document.querySelector("[data-cookie-modal-reject]")?.addEventListener("click", () => {
+    setInputs(defaultConsent);
+    saveConsent(defaultConsent);
+  });
+
+  modal.querySelectorAll("[data-cookie-close]").forEach(button => {
+    button.addEventListener("click", closeModal);
+  });
+
+  settingsButtons.forEach(button => button.addEventListener("click", openModal));
+
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && !modal.hidden) closeModal();
+  });
+
+  const existingConsent = readConsent();
+  if (existingConsent) {
+    banner.hidden = true;
+    activateScripts(existingConsent);
+  } else {
+    banner.hidden = false;
+  }
+})();
