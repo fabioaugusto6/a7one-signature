@@ -1540,3 +1540,26 @@ a{text-decoration:none;color:inherit}
     margin:0 auto!important;
   }
 }
+
+
+/* =========================================================
+   V5 FINAL — Dani text + metadata polish
+   ========================================================= */
+
+.dani-text-desktop{
+  display:inline;
+}
+
+.dani-text-mobile{
+  display:none;
+}
+
+@media (max-width:720px){
+  .dani-text-desktop{
+    display:none!important;
+  }
+
+  .dani-text-mobile{
+    display:inline!important;
+  }
+}
