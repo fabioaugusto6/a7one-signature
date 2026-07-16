@@ -3096,3 +3096,29 @@ a{text-decoration:none;color:inherit}
     margin-top: 12px !important;
   }
 }
+
+
+/* V17 — PRIVACY POLICY (1784229702) */
+.footer-legal {
+  display:flex;
+  align-items:center;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+.footer-legal a {
+  color:inherit;
+  font-size:11px;
+  text-decoration:none;
+  transition:color .2s ease;
+}
+
+.footer-legal a:hover {
+  color:#4b8cff;
+}
+
+@media (max-width:720px) {
+  .footer-legal {
+    justify-content:center;
+  }
+}

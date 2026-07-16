@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Política de Privacidade da A7 One, em conformidade com a Lei Geral de Proteção de Dados Pessoais — LGPD.">
+  <meta name="theme-color" content="#04060b">
+
+  <title>Política de Privacidade | A7 One</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png">
+  <link rel="stylesheet" href="../styles.css?v=1784229702">
+
+  <style>
+    body.legal-page {
+      background:
+        radial-gradient(circle at 78% 8%, rgba(18, 76, 190, .19), transparent 28%),
+        #04060b;
+      color: #f5f7fb;
+    }
+
+    .legal-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      background: rgba(4, 6, 11, .90);
+      backdrop-filter: blur(18px);
+    }
+
+    .legal-header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 94px;
+    }
+
+    .legal-header img {
+      display: block;
+      width: 142px;
+      height: auto;
+    }
+
+    .legal-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: #d8dde7;
+      font-size: 14px;
+      text-decoration: none;
+      transition: color .2s ease;
+    }
+
+    .legal-back:hover {
+      color: #4b8cff;
+    }
+
+    .legal-hero {
+      padding: 110px 0 68px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .legal-hero .eyebrow {
+      margin-bottom: 18px;
+    }
+
+    .legal-hero h1 {
+      max-width: 920px;
+      margin: 0;
+      font-size: clamp(52px, 7vw, 100px);
+      line-height: .95;
+      letter-spacing: -5px;
+      font-weight: 500;
+    }
+
+    .legal-hero h1 em {
+      color: #347cff;
+      font-style: normal;
+    }
+
+    .legal-hero p {
+      max-width: 740px;
+      margin: 32px 0 0;
+      color: #99a3b0;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .legal-layout {
+      display: grid;
+      grid-template-columns: 250px minmax(0, 840px);
+      gap: 88px;
+      align-items: start;
+      padding-top: 82px;
+      padding-bottom: 120px;
+    }
+
+    .legal-index {
+      position: sticky;
+      top: 128px;
+      padding: 22px 0;
+      border-top: 1px solid rgba(255,255,255,.12);
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+
+    .legal-index strong {
+      display: block;
+      margin-bottom: 18px;
+      color: #fff;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .legal-index a {
+      display: block;
+      padding: 8px 0;
+      color: #7f8996;
+      font-size: 13px;
+      line-height: 1.4;
+      text-decoration: none;
+      transition: color .2s ease;
+    }
+
+    .legal-index a:hover {
+      color: #4b8cff;
+    }
+
+    .legal-content {
+      min-width: 0;
+    }
+
+    .legal-content section {
+      scroll-margin-top: 130px;
+      padding: 0 0 58px;
+      margin-bottom: 58px;
+      border-bottom: 1px solid rgba(255,255,255,.09);
+    }
+
+    .legal-content section:last-child {
+      margin-bottom: 0;
+    }
+
+    .legal-content h2 {
+      margin: 0 0 22px;
+      color: #f7f8fb;
+      font-size: clamp(30px, 3.2vw, 46px);
+      line-height: 1.06;
+      letter-spacing: -1.8px;
+      font-weight: 500;
+    }
+
+    .legal-content h3 {
+      margin: 30px 0 12px;
+      color: #f2f5fa;
+      font-size: 21px;
+      line-height: 1.3;
+    }
+
+    .legal-content p,
+    .legal-content li {
+      color: #a5aeba;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    .legal-content p {
+      margin: 0 0 18px;
+    }
+
+    .legal-content ul {
+      margin: 0 0 22px;
+      padding-left: 22px;
+    }
+
+    .legal-content li + li {
+      margin-top: 7px;
+    }
+
+    .legal-data-card {
+      display: grid;
+      gap: 13px;
+      margin: 28px 0 0;
+      padding: 28px;
+      border: 1px solid rgba(52,124,255,.28);
+      border-radius: 20px;
+      background: linear-gradient(145deg, rgba(15,33,68,.68), rgba(8,11,18,.86));
+    }
+
+    .legal-data-card div {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 20px;
+    }
+
+    .legal-data-card span {
+      color: #6f7c8c;
+      font-size: 13px;
+    }
+
+    .legal-data-card strong,
+    .legal-data-card a {
+      color: #f0f4fa;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .legal-note {
+      margin-top: 24px;
+      padding: 20px 22px;
+      border-left: 2px solid #347cff;
+      background: rgba(30,77,168,.10);
+      color: #aeb8c5;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .legal-footer {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 30px;
+      align-items: center;
+      padding-top: 35px;
+      padding-bottom: 35px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      color: #727c89;
+      font-size: 12px;
+    }
+
+    .legal-footer a {
+      color: #a8b1bd;
+      text-decoration: none;
+    }
+
+    .footer-legal {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-legal a {
+      color: inherit;
+      font-size: 11px;
+      text-decoration: none;
+      transition: color .2s ease;
+    }
+
+    .footer-legal a:hover {
+      color: #4b8cff;
+    }
+
+    @media (max-width: 900px) {
+      .legal-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .legal-index {
+        position: static;
+        display: none;
+      }
+
+      .legal-hero {
+        padding-top: 80px;
+      }
+
+      .legal-data-card div {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .legal-header-inner {
+        min-height: 78px;
+      }
+
+      .legal-header img {
+        width: 118px;
+      }
+
+      .legal-back {
+        font-size: 12px;
+      }
+
+      .legal-hero {
+        padding: 68px 0 52px;
+      }
+
+      .legal-hero h1 {
+        font-size: 49px;
+        letter-spacing: -3.2px;
+      }
+
+      .legal-hero p {
+        font-size: 16px;
+      }
+
+      .legal-layout {
+        padding-top: 58px;
+        padding-bottom: 82px;
+      }
+
+      .legal-content section {
+        padding-bottom: 42px;
+        margin-bottom: 42px;
+      }
+
+      .legal-content p,
+      .legal-content li {
+        font-size: 15px;
+      }
+
+      .legal-data-card {
+        padding: 21px;
+      }
+
+      .legal-footer {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body class="legal-page">
+  <header class="legal-header">
+    <div class="legal-header-inner shell">
+      <a href="/" aria-label="Voltar para a página inicial da A7 One">
+        <img src="../assets/a7one-logo-clean.png?v=1784229702" alt="A7 One">
+      </a>
+      <a class="legal-back" href="/">← Voltar para o site</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="legal-hero">
+      <div class="shell">
+        <p class="eyebrow">PRIVACIDADE • TRANSPARÊNCIA • LGPD</p>
+        <h1>Política de <em>Privacidade.</em></h1>
+        <p>
+          Esta Política explica como a A7 One coleta, utiliza, armazena,
+          compartilha e protege dados pessoais em seus canais digitais.
+        </p>
+      </div>
+    </section>
+
+    <div class="legal-layout shell">
+      <aside class="legal-index" aria-label="Índice da Política de Privacidade">
+        <strong>Nesta página</strong>
+        <a href="#responsavel">1. Responsável pelos dados</a>
+        <a href="#dados-coletados">2. Dados coletados</a>
+        <a href="#navegacao">3. Dados de navegação</a>
+        <a href="#finalidades">4. Finalidades</a>
+        <a href="#bases-legais">5. Bases legais</a>
+        <a href="#dani">6. Atendimento pela Dani</a>
+        <a href="#compartilhamento">7. Compartilhamento</a>
+        <a href="#cookies">8. Cookies</a>
+        <a href="#terceiros">9. Ferramentas de terceiros</a>
+        <a href="#retencao">10. Retenção</a>
+        <a href="#seguranca">11. Segurança</a>
+        <a href="#transferencia">12. Transferência internacional</a>
+        <a href="#direitos">13. Direitos do titular</a>
+        <a href="#criancas">14. Crianças e adolescentes</a>
+        <a href="#links">15. Links externos</a>
+        <a href="#marketing">16. Marketing</a>
+        <a href="#atualizacoes">17. Atualizações</a>
+        <a href="#contato">18. Contato</a>
+      </aside>
+
+      <article class="legal-content">
+        <section>
+          <p><strong>Última atualização:</strong> 16 de julho de 2026.</p>
+          <p>
+            A A7 One respeita a sua privacidade e está comprometida com a proteção
+            dos dados pessoais tratados em seus canais digitais.
+          </p>
+          <p>
+            Esta Política de Privacidade explica como coletamos, utilizamos,
+            armazenamos, compartilhamos e protegemos informações pessoais de
+            visitantes, potenciais clientes, clientes e demais pessoas que
+            interagem com o site <strong>a7one.com.br</strong> e com os nossos
+            canais de atendimento.
+          </p>
+          <p>
+            O tratamento de dados pessoais é realizado em conformidade com a
+            Lei nº 13.709/2018 — Lei Geral de Proteção de Dados Pessoais, a LGPD.
+          </p>
+        </section>
+
+        <section id="responsavel">
+          <h2>1. Quem é responsável pelo tratamento dos dados</h2>
+          <p>
+            Para os tratamentos descritos nesta Política, a empresa abaixo atua
+            como controladora dos dados pessoais:
+          </p>
+
+          <div class="legal-data-card">
+            <div><span>Controlador</span><strong>54.446.458 FABIO PIMENTEL AUGUSTO</strong></div>
+            <div><span>Nome comercial</span><strong>A7 One</strong></div>
+            <div><span>CNPJ</span><strong>54.446.458/0001-06</strong></div>
+            <div><span>Endereço</span><strong>Alameda Amazonas, 875, Sala 161A, Alphaville Centro Industrial e Empresarial/Alphaville, Barueri–SP, CEP 06454-070</strong></div>
+            <div><span>E-mail de privacidade</span><a href="mailto:contato@a7one.com.br">contato@a7one.com.br</a></div>
+            <div><span>Site</span><a href="https://a7one.com.br">a7one.com.br</a></div>
+          </div>
+        </section>
+
+        <section id="dados-coletados">
+          <h2>2. Quais dados podemos coletar</h2>
+          <p>Podemos coletar dados fornecidos diretamente por você quando:</p>
+          <ul>
+            <li>preenche um formulário;</li>
+            <li>solicita atendimento ou orçamento;</li>
+            <li>conversa com a Dani;</li>
+            <li>entra em contato pelo WhatsApp;</li>
+            <li>agenda uma reunião;</li>
+            <li>contrata uma solução;</li>
+            <li>responde a pesquisas ou envia informações voluntariamente.</li>
+          </ul>
+
+          <p>Entre os dados que podem ser solicitados estão:</p>
+          <ul>
+            <li>nome;</li>
+            <li>e-mail;</li>
+            <li>telefone e WhatsApp;</li>
+            <li>nome da empresa;</li>
+            <li>cargo ou área de atuação;</li>
+            <li>informações sobre o negócio;</li>
+            <li>serviço ou solução de interesse;</li>
+            <li>conteúdo das mensagens enviadas;</li>
+            <li>informações necessárias à elaboração de propostas e prestação dos serviços.</li>
+          </ul>
+
+          <p>
+            Não solicitamos senhas de redes sociais, contas bancárias ou outros
+            dados sensíveis por meio dos formulários públicos do site.
+          </p>
+        </section>
+
+        <section id="navegacao">
+          <h2>3. Dados coletados durante a navegação</h2>
+          <p>
+            Quando você acessa nosso site, algumas informações técnicas podem
+            ser coletadas automaticamente, como:
+          </p>
+          <ul>
+            <li>endereço IP;</li>
+            <li>tipo de dispositivo;</li>
+            <li>navegador e sistema operacional;</li>
+            <li>páginas acessadas;</li>
+            <li>data e horário do acesso;</li>
+            <li>tempo de permanência;</li>
+            <li>origem do acesso;</li>
+            <li>interações realizadas no site;</li>
+            <li>identificadores associados a cookies e tecnologias semelhantes.</li>
+          </ul>
+          <p>
+            Essas informações podem ser utilizadas para segurança, funcionamento
+            do site, medição de audiência, análise de desempenho e aprimoramento
+            da experiência.
+          </p>
+        </section>
+
+        <section id="finalidades">
+          <h2>4. Para quais finalidades utilizamos os dados</h2>
+          <p>Podemos tratar os seus dados pessoais para:</p>
+          <ul>
+            <li>responder solicitações e dúvidas;</li>
+            <li>realizar atendimento comercial;</li>
+            <li>elaborar e enviar propostas;</li>
+            <li>identificar a solução mais adequada ao seu negócio;</li>
+            <li>agendar reuniões;</li>
+            <li>executar contratos e prestar serviços;</li>
+            <li>manter o relacionamento com clientes;</li>
+            <li>enviar comunicações relacionadas ao atendimento;</li>
+            <li>encaminhar conteúdos, novidades ou ofertas, quando permitido;</li>
+            <li>melhorar o site, os serviços e a experiência dos visitantes;</li>
+            <li>realizar análises estatísticas e de desempenho;</li>
+            <li>prevenir fraudes, abusos e incidentes de segurança;</li>
+            <li>cumprir obrigações legais, regulatórias e contratuais;</li>
+            <li>exercer direitos em processos judiciais, administrativos ou arbitrais.</li>
+          </ul>
+        </section>
+
+        <section id="bases-legais">
+          <h2>5. Bases legais utilizadas</h2>
+          <p>
+            O tratamento poderá ocorrer com fundamento em diferentes hipóteses
+            previstas na LGPD, conforme a finalidade, incluindo:
+          </p>
+          <ul>
+            <li>consentimento;</li>
+            <li>execução de contrato ou procedimentos preliminares;</li>
+            <li>cumprimento de obrigação legal ou regulatória;</li>
+            <li>exercício regular de direitos;</li>
+            <li>legítimo interesse, após avaliação dos direitos e expectativas do titular;</li>
+            <li>proteção do crédito, quando aplicável.</li>
+          </ul>
+          <p>
+            Quando o tratamento depender de consentimento, você poderá revogá-lo
+            posteriormente. A revogação não invalida os tratamentos realizados
+            anteriormente de forma legítima.
+          </p>
+        </section>
+
+        <section id="dani">
+          <h2>6. Atendimento pela Dani</h2>
+          <p>
+            A Dani é a concierge digital da A7 One e poderá receber informações
+            fornecidas voluntariamente durante o atendimento.
+          </p>
+          <p>Esses dados podem ser utilizados para:</p>
+          <ul>
+            <li>compreender sua necessidade;</li>
+            <li>responder dúvidas iniciais;</li>
+            <li>indicar serviços e soluções;</li>
+            <li>direcionar o atendimento para um profissional da equipe;</li>
+            <li>registrar o histórico necessário à continuidade da conversa.</li>
+          </ul>
+          <p>
+            As respostas automatizadas não substituem análises profissionais ou
+            decisões humanas quando estas forem necessárias.
+          </p>
+        </section>
+
+        <section id="compartilhamento">
+          <h2>7. Compartilhamento de dados</h2>
+          <p>
+            A A7 One poderá compartilhar dados pessoais apenas quando necessário
+            com fornecedores que auxiliam na operação, como:
+          </p>
+          <ul>
+            <li>serviços de hospedagem e infraestrutura;</li>
+            <li>sistemas de atendimento e CRM;</li>
+            <li>ferramentas de formulários;</li>
+            <li>plataformas de agendamento;</li>
+            <li>serviços de e-mail;</li>
+            <li>plataformas de automação;</li>
+            <li>provedores de análise de audiência;</li>
+            <li>plataformas de publicidade;</li>
+            <li>serviços de segurança da informação;</li>
+            <li>assessorias contábeis, jurídicas ou administrativas;</li>
+            <li>autoridades públicas, quando houver obrigação legal.</li>
+          </ul>
+          <p>
+            Esses terceiros recebem apenas as informações necessárias para
+            executar suas atividades e devem adotar medidas adequadas de
+            segurança e proteção de dados.
+          </p>
+          <p><strong>A A7 One não comercializa bases de dados pessoais.</strong></p>
+        </section>
+
+        <section id="cookies">
+          <h2>8. Cookies e tecnologias semelhantes</h2>
+          <p>
+            Cookies são pequenos arquivos armazenados no dispositivo do visitante
+            para permitir o funcionamento do site, lembrar preferências e
+            compreender como as páginas são utilizadas.
+          </p>
+
+          <h3>Cookies necessários</h3>
+          <p>
+            Essenciais para o funcionamento, a segurança e os recursos básicos do site.
+          </p>
+
+          <h3>Cookies de funcionalidade</h3>
+          <p>Permitem lembrar escolhas ou preferências do visitante.</p>
+
+          <h3>Cookies analíticos</h3>
+          <p>
+            Ajudam a compreender acessos, comportamento de navegação e desempenho das páginas.
+          </p>
+
+          <h3>Cookies de marketing</h3>
+          <p>
+            Podem ser utilizados para mensuração de campanhas, criação de
+            públicos e apresentação de anúncios mais relevantes.
+          </p>
+
+          <p>
+            Os cookies não necessários somente serão utilizados após a sua
+            escolha no banner de consentimento. Você poderá aceitar, recusar ou
+            configurar as categorias disponíveis.
+          </p>
+
+          <div class="legal-note">
+            Quando a ferramenta de consentimento estiver ativa, o visitante
+            poderá alterar as preferências posteriormente por meio da opção
+            “Configurações de cookies” disponível no site.
+          </div>
+        </section>
+
+        <section id="terceiros">
+          <h2>9. Ferramentas de terceiros</h2>
+          <p>
+            Conforme as ferramentas efetivamente instaladas no site, poderemos
+            utilizar serviços como:
+          </p>
+          <ul>
+            <li>Google Analytics;</li>
+            <li>Google Ads;</li>
+            <li>Meta Pixel;</li>
+            <li>Microsoft Clarity;</li>
+            <li>ferramentas de atendimento e CRM;</li>
+            <li>WhatsApp;</li>
+            <li>serviços de hospedagem da Vercel;</li>
+            <li>outras plataformas necessárias à operação.</li>
+          </ul>
+          <p>
+            Cada fornecedor poderá tratar informações de acordo com suas próprias
+            políticas e obrigações legais. Esta lista deverá ser atualizada
+            sempre que uma nova ferramenta que trate dados pessoais for instalada.
+          </p>
+        </section>
+
+        <section id="retencao">
+          <h2>10. Armazenamento e retenção</h2>
+          <p>
+            Os dados serão armazenados pelo tempo necessário para cumprir as
+            finalidades informadas nesta Política.
+          </p>
+          <p>O período de retenção poderá considerar:</p>
+          <ul>
+            <li>duração do relacionamento com o titular;</li>
+            <li>execução dos serviços contratados;</li>
+            <li>obrigações legais ou regulatórias;</li>
+            <li>prazos prescricionais;</li>
+            <li>prevenção de fraudes;</li>
+            <li>exercício regular de direitos;</li>
+            <li>solicitações do próprio titular.</li>
+          </ul>
+          <p>
+            Após o término do tratamento, os dados poderão ser eliminados,
+            bloqueados ou anonimizados, ressalvadas as hipóteses legais de conservação.
+          </p>
+        </section>
+
+        <section id="seguranca">
+          <h2>11. Segurança da informação</h2>
+          <p>
+            A A7 One adota medidas técnicas e administrativas razoáveis para
+            proteger os dados contra acessos não autorizados, perda, alteração,
+            destruição, divulgação ou tratamento inadequado.
+          </p>
+          <p>
+            Apesar dos esforços empregados, nenhum sistema conectado à internet
+            é completamente imune a riscos.
+          </p>
+          <p>
+            Caso seja identificado incidente de segurança que possa causar risco
+            ou dano relevante, a A7 One adotará as providências previstas na
+            legislação e na regulamentação aplicável, incluindo comunicações à
+            Autoridade Nacional de Proteção de Dados e aos titulares, quando exigidas.
+          </p>
+        </section>
+
+        <section id="transferencia">
+          <h2>12. Transferência internacional</h2>
+          <p>
+            Alguns fornecedores de tecnologia podem armazenar ou processar
+            informações em servidores localizados fora do Brasil.
+          </p>
+          <p>
+            Quando houver transferência internacional de dados, a A7 One buscará
+            utilizar fornecedores e mecanismos compatíveis com as exigências da
+            legislação brasileira.
+          </p>
+        </section>
+
+        <section id="direitos">
+          <h2>13. Direitos do titular</h2>
+          <p>Nos termos da LGPD, você poderá solicitar, conforme aplicável:</p>
+          <ul>
+            <li>confirmação da existência de tratamento;</li>
+            <li>acesso aos dados;</li>
+            <li>correção de informações incompletas, inexatas ou desatualizadas;</li>
+            <li>anonimização, bloqueio ou eliminação de dados desnecessários ou tratados irregularmente;</li>
+            <li>portabilidade, quando regulamentada e aplicável;</li>
+            <li>informação sobre compartilhamentos;</li>
+            <li>informação sobre a possibilidade de não consentir e suas consequências;</li>
+            <li>revogação do consentimento;</li>
+            <li>eliminação de dados tratados com consentimento, observadas as exceções legais;</li>
+            <li>revisão de decisões tomadas unicamente com base em tratamento automatizado;</li>
+            <li>oposição a tratamentos realizados em desconformidade com a LGPD.</li>
+          </ul>
+          <p>
+            Poderemos solicitar informações adicionais para confirmar a identidade
+            do solicitante e evitar o acesso indevido aos dados de terceiros.
+          </p>
+        </section>
+
+        <section id="criancas">
+          <h2>14. Dados de crianças e adolescentes</h2>
+          <p>
+            Os serviços da A7 One são direcionados predominantemente a empresas e profissionais.
+          </p>
+          <p>
+            Não buscamos coletar intencionalmente dados pessoais de crianças.
+            Caso seja identificada coleta indevida, poderão ser adotadas medidas
+            para a exclusão das informações, observadas as obrigações legais.
+          </p>
+        </section>
+
+        <section id="links">
+          <h2>15. Links externos</h2>
+          <p>
+            O site poderá conter links para páginas, redes sociais ou plataformas
+            de terceiros.
+          </p>
+          <p>
+            A A7 One não controla as práticas de privacidade desses ambientes.
+            Recomendamos a leitura das políticas de privacidade de cada plataforma acessada.
+          </p>
+        </section>
+
+        <section id="marketing">
+          <h2>16. Comunicações de marketing</h2>
+          <p>
+            Quando permitido, poderemos utilizar seus dados para enviar novidades,
+            conteúdos, convites e ofertas relacionadas às soluções da A7 One.
+          </p>
+          <p>
+            Você poderá cancelar o recebimento a qualquer momento por meio do link
+            de descadastro ou solicitando a exclusão pelos canais de atendimento.
+          </p>
+          <p>
+            Mensagens necessárias à execução de contratos ou à continuidade de
+            um atendimento poderão continuar sendo enviadas.
+          </p>
+        </section>
+
+        <section id="atualizacoes">
+          <h2>17. Atualizações desta Política</h2>
+          <p>
+            Esta Política poderá ser atualizada para refletir mudanças nos
+            serviços, no site, nas ferramentas utilizadas, nos processos internos
+            ou na legislação e regulamentação aplicáveis.
+          </p>
+          <p>
+            A data da última alteração será indicada no início da página. Quando
+            uma alteração exigir novo consentimento, apresentaremos uma nova
+            solicitação ao titular.
+          </p>
+        </section>
+
+        <section id="contato">
+          <h2>18. Como falar conosco</h2>
+          <p>
+            Para dúvidas, solicitações ou exercício de direitos relacionados aos
+            seus dados pessoais, entre em contato:
+          </p>
+
+          <div class="legal-data-card">
+            <div><span>Empresa</span><strong>A7 One</strong></div>
+            <div><span>E-mail</span><a href="mailto:contato@a7one.com.br">contato@a7one.com.br</a></div>
+            <div><span>Endereço</span><strong>Alameda Amazonas, 875, Sala 161A, Alphaville Centro Industrial e Empresarial/Alphaville, Barueri–SP, CEP 06454-070</strong></div>
+          </div>
+
+          <p style="margin-top: 24px;">
+            Responderemos às solicitações de acordo com os prazos e critérios
+            previstos na legislação aplicável.
+          </p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="legal-footer shell">
+    <span>© 2026 A7 One. Todos os direitos reservados.</span>
+    <a href="/">Voltar para a página inicial</a>
+  </footer>
+</body>
+</html>
