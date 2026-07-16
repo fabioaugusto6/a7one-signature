@@ -1,29 +1,23 @@
-# A7 One — V8 Leadership Final
+# A7 One — V11 Ecosystem
 
-Atualização consolidada para a Home oficial.
+Atualização com refinamentos de autoridade e uma nova seção institucional simples.
 
 ## Nova seção
-- “A visão por trás da A7 One”
-- Foto de Fábio Augusto
-- Cargo: Founder & CEO
-- Copy institucional aprovada
-- CTA para o Método A7
+“Empresas que moldaram o Método A7”
 
-## Tablet / iPad
-- Padronização dos alinhamentos.
-- Hero, próxima fase, Método A7, liderança e Dani com linguagem visual consistente.
-- Método A7 reduzido para evitar sobreposição.
-- Tratamento específico para modo retrato e paisagem.
+- MentalFlix — Saúde mental + inteligência artificial
+- AlZap — IA para atendimento e automação
+- iAuAu — Dog walker e hospedagem pet
+- Mentoria 3 em 1 — Estratégia e desenvolvimento empresarial
 
-## Favicon
-- Novo favicon com o símbolo A7 ocupando mais espaço.
-- Arquivos 16px, 32px, ICO, Apple Touch e Android.
-- Cache atualizado.
+Os nomes foram usados como marcas tipográficas. Nenhum logotipo foi inventado.
+Quando os PNGs oficiais forem enviados, eles poderão substituir os nomes sem mudar o layout.
+
+## Outros ajustes
+- Seção de liderança recebeu mais destaque.
+- CTA final ganhou uma mensagem mais forte.
+- Responsividade para desktop, tablet e celular preservada.
+- Sem seção de clientes nesta versão.
 
 ## Publicação
-1. Descompacte o ZIP.
-2. Envie somente o conteúdo interno ao mesmo repositório `a7one-assinatura`.
-3. Substitua os arquivos existentes.
-4. A Vercel publicará automaticamente.
-
-O favicon pode levar alguns minutos ou exigir fechar e reabrir a aba por causa do cache do navegador.
+Descompacte e envie apenas o conteúdo interno para o mesmo repositório `a7one-assinatura`.
