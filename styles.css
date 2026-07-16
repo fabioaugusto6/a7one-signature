@@ -2501,3 +2501,299 @@ a{text-decoration:none;color:inherit}
     white-space: normal !important;
   }
 }
+
+
+/* =========================================================
+   V14 — COMPACT CEO + REFINED ECOSYSTEM
+   ========================================================= */
+
+/* CEO: supporting authority, not a personal landing page */
+.leadership {
+  grid-template-columns:minmax(280px, .72fr) minmax(0, 1.28fr) !important;
+  gap:72px !important;
+  align-items:center !important;
+  padding-top:100px !important;
+  padding-bottom:100px !important;
+}
+
+.leadership-photo {
+  width:100% !important;
+  max-width:470px !important;
+  height:520px !important;
+  min-height:0 !important;
+  justify-self:start !important;
+  border-radius:24px !important;
+}
+
+.leadership-photo img {
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center 16% !important;
+}
+
+.leadership-copy {
+  max-width:720px !important;
+}
+
+.leadership-copy h2 {
+  font-size:clamp(48px,4.4vw,68px) !important;
+}
+
+/* Ecosystem: editorial list instead of a catalogue of cards */
+.ecosystem-refined {
+  padding-top:110px !important;
+  padding-bottom:110px !important;
+}
+
+.ecosystem-refined .ecosystem-heading {
+  max-width:1120px !important;
+  margin-bottom:56px !important;
+}
+
+.ecosystem-approved-title {
+  max-width:1120px !important;
+  font-size:clamp(48px,5.4vw,78px) !important;
+  line-height:1.02 !important;
+  letter-spacing:-3.8px !important;
+}
+
+.ecosystem-approved-title span {
+  display:block !important;
+  white-space:nowrap !important;
+}
+
+.ecosystem-list {
+  border-top:1px solid rgba(255,255,255,.12);
+}
+
+.ecosystem-row {
+  display:grid;
+  grid-template-columns:220px 1fr;
+  gap:38px;
+  align-items:center;
+  min-height:166px;
+  padding:24px 0;
+  border-bottom:1px solid rgba(255,255,255,.11);
+  transition:background .3s ease, padding .3s ease;
+}
+
+.ecosystem-row:hover {
+  padding-left:18px;
+  padding-right:18px;
+  background:linear-gradient(90deg,rgba(25,90,225,.07),rgba(255,255,255,0));
+}
+
+.ecosystem-row-logo {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:210px;
+  height:112px;
+  overflow:hidden;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.08);
+  background:#020305;
+}
+
+.ecosystem-row-logo img {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+
+.ecosystem-row-logo-dark {
+  padding:8px 14px;
+}
+
+.ecosystem-row-logo-gold {
+  padding:20px 24px;
+  background:
+    radial-gradient(circle at 50% 28%,rgba(210,163,52,.10),transparent 48%),
+    #050505;
+  border-color:rgba(211,164,53,.24);
+}
+
+.ecosystem-row-logo-mentoria {
+  padding:10px;
+}
+
+.ecosystem-row-logo-mentoria img {
+  width:88px;
+  height:88px;
+}
+
+.ecosystem-row-copy {
+  display:grid;
+  grid-template-columns:48px minmax(190px,.7fr) 1fr;
+  gap:25px;
+  align-items:center;
+}
+
+.ecosystem-row-copy > span {
+  color:#2f78ff;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:2px;
+}
+
+.ecosystem-row-gold .ecosystem-row-copy > span {
+  color:#d4a63e;
+}
+
+.ecosystem-row-copy h3 {
+  margin:0;
+  font-size:clamp(27px,2.2vw,36px);
+  line-height:1.08;
+  letter-spacing:-1.5px;
+}
+
+.ecosystem-row-gold .ecosystem-row-copy h3 {
+  color:#e0b856;
+}
+
+.ecosystem-row-copy p {
+  margin:0;
+  max-width:520px;
+  color:#929ba7;
+  font-size:15px;
+  line-height:1.55;
+}
+
+.ecosystem-statement-refined {
+  grid-template-columns:.7fr 1.3fr !important;
+  margin-top:45px !important;
+}
+
+.ecosystem-statement-refined strong {
+  max-width:720px;
+}
+
+/* Tablet */
+@media (min-width:721px) and (max-width:1180px) {
+  .leadership {
+    grid-template-columns:340px 1fr !important;
+    gap:42px !important;
+  }
+
+  .leadership-photo {
+    height:470px !important;
+  }
+
+  .ecosystem-approved-title span {
+    white-space:normal !important;
+  }
+
+  .ecosystem-row {
+    grid-template-columns:180px 1fr;
+  }
+
+  .ecosystem-row-logo {
+    width:170px;
+    height:100px;
+  }
+
+  .ecosystem-row-copy {
+    grid-template-columns:38px 180px 1fr;
+    gap:18px;
+  }
+}
+
+/* Mobile */
+@media (max-width:720px) {
+  .leadership {
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:34px !important;
+    padding-top:72px !important;
+    padding-bottom:72px !important;
+  }
+
+  .leadership-photo {
+    width:100% !important;
+    max-width:360px !important;
+    height:410px !important;
+    margin:0 auto !important;
+    justify-self:center !important;
+  }
+
+  .leadership-photo img {
+    object-position:center 13% !important;
+  }
+
+  .leadership-copy {
+    text-align:center !important;
+    margin:0 auto !important;
+  }
+
+  .ecosystem-approved-title {
+    font-size:39px !important;
+    line-height:1.04 !important;
+    letter-spacing:-2.2px !important;
+  }
+
+  .ecosystem-approved-title span {
+    white-space:normal !important;
+  }
+
+  .ecosystem-list {
+    margin-top:12px;
+  }
+
+  .ecosystem-row {
+    grid-template-columns:92px 1fr;
+    gap:18px;
+    min-height:138px;
+    padding:20px 0;
+  }
+
+  .ecosystem-row:hover {
+    padding-left:0;
+    padding-right:0;
+  }
+
+  .ecosystem-row-logo {
+    width:92px;
+    height:82px;
+    border-radius:13px;
+  }
+
+  .ecosystem-row-logo-dark {
+    padding:6px;
+  }
+
+  .ecosystem-row-logo-gold {
+    padding:12px;
+  }
+
+  .ecosystem-row-logo-mentoria img {
+    width:65px;
+    height:65px;
+  }
+
+  .ecosystem-row-copy {
+    display:block;
+    text-align:left;
+  }
+
+  .ecosystem-row-copy > span {
+    display:block;
+    margin-bottom:6px;
+  }
+
+  .ecosystem-row-copy h3 {
+    margin-bottom:7px;
+    font-size:25px;
+  }
+
+  .ecosystem-row-copy p {
+    font-size:13px;
+  }
+
+  .ecosystem-statement-refined {
+    grid-template-columns:1fr !important;
+    gap:14px !important;
+    text-align:center !important;
+  }
+}
