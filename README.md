@@ -1,23 +1,19 @@
-# A7 One — V11 Ecosystem
+# A7 One — V13 FORCE ASSETS
 
-Atualização com refinamentos de autoridade e uma nova seção institucional simples.
+Esta versão força a substituição visual e evita cache antigo.
 
-## Nova seção
-“Empresas que moldaram o Método A7”
+## Importante
+1. Descompacte o ZIP.
+2. No GitHub, apague os arquivos antigos da raiz do repositório.
+3. Envie TODOS os arquivos e a pasta `assets` desta versão.
+4. Faça o commit.
+5. Aguarde a Vercel finalizar a nova implantação.
+6. Abra o site em aba anônima.
 
-- MentalFlix — Saúde mental + inteligência artificial
-- AlZap — IA para atendimento e automação
-- iAuAu — Dog walker e hospedagem pet
-- Mentoria 3 em 1 — Estratégia e desenvolvimento empresarial
-
-Os nomes foram usados como marcas tipográficas. Nenhum logotipo foi inventado.
-Quando os PNGs oficiais forem enviados, eles poderão substituir os nomes sem mudar o layout.
-
-## Outros ajustes
-- Seção de liderança recebeu mais destaque.
-- CTA final ganhou uma mensagem mais forte.
-- Responsividade para desktop, tablet e celular preservada.
-- Sem seção de clientes nesta versão.
-
-## Publicação
-Descompacte e envie apenas o conteúdo interno para o mesmo repositório `a7one-assinatura`.
+## Garantias desta versão
+- A foto real também substitui o arquivo antigo `fabio-augusto-ceo.jpg`.
+- Os quatro logos estão incorporados diretamente no HTML.
+- A frase possui quebra fixa:
+  Antes de desenvolver um método,
+  construímos negócios reais.
+- Cache CSS/JS: 1784219623
