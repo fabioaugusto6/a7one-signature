@@ -3084,3 +3084,15 @@ a{text-decoration:none;color:inherit}
     font-size:35px;
   }
 }
+
+
+/* V16 — CLEAN INSTITUTIONAL SITE (1784226227) */
+.leadership + .dani {
+  margin-top: 42px !important;
+}
+
+@media (max-width: 720px) {
+  .leadership + .dani {
+    margin-top: 12px !important;
+  }
+}
