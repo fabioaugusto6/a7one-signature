@@ -1,19 +1,18 @@
-# A7 One — V23 LP Criação de Sites
+# A7 One — V24 LP Criação de Sites
 
-## Ajustes finais
-- Headline com quebra controlada
-- “o que sua empresa vende” permanece junto
-- CTA principal indica WhatsApp
-- Botão secundário para exemplos
-- Selo de R$ 799 mais valorizado
-- Cards com duas linhas controladas
-- Mais respiro entre título e descrição
-- Observação melhor alinhada
+## Correções desta versão
+- Headline em seis linhas controladas
+- “vende” sem avançar para a direita
+- Selo de R$ 799 reposicionado no tablet
+- Selo acima da headline no mobile
+- Hero com espaçamento seguro no celular
+- Foto da Dani sem corte no iPad
+- Ajuste de proporção e enquadramento da Dani
 - Sem Google Tag Manager
 
 ## Publicação
-1. Descompacte.
-2. Vá à raiz do repositório.
+1. Descompacte o ZIP.
+2. Vá à raiz do repositório no GitHub.
 3. Adicionar arquivo → Carregar arquivos.
 4. Arraste todo o conteúdo interno.
 5. Confirme na branch principal.
@@ -21,4 +20,4 @@
 URL:
 https://a7one.com.br/pages/criacao-de-sites
 
-Cache: 1784671702
+Cache: 1784673006
