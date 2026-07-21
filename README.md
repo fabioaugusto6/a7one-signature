@@ -1,29 +1,24 @@
-# A7 One — V20 Landing Page Criação de Sites
+# A7 One — V21 LP Criação de Sites | Alta Conversão
 
-## Importante
-Este pacote NÃO instala o Google Tag Manager.
-
-Mantém:
-- Site institucional
-- Política de Privacidade
-- Banner de cookies
-- Verificação de domínio da Meta
-
-Adiciona:
-- `pages/criacao-de-sites.html`
-- `landing.css`
-- `landing.js`
-- `robots.txt`
-- `sitemap.xml`
+## Mudanças
+- Página cerca de 30% menor
+- Tipografia reduzida
+- Hero com avenida realista
+- Linguagem para empresários leigos
+- “Landing Page” substituída por explicações simples
+- Oferta a partir de R$ 799
+- Dani e WhatsApp
+- FAQ reduzido
+- Nenhum Google Tag Manager instalado
 
 ## Publicação
 1. Descompacte o ZIP.
-2. Entre na raiz do repositório no GitHub.
+2. Vá à raiz do repositório no GitHub.
 3. Use `Add file` → `Upload files`.
 4. Arraste todo o conteúdo interno.
-5. Confirme o commit na branch `main`.
+5. Confirme o commit na `main`.
 
-A Landing Page ficará em:
-`https://a7one.com.br/pages/criacao-de-sites`
+URL:
+https://a7one.com.br/pages/criacao-de-sites
 
-Cache: 1784663442
+Cache: 1784665518
