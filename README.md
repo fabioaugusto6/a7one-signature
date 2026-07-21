@@ -1,41 +1,29 @@
-# A7 One — V18 Cookie Consent / LGPD
-
-## Incluído
-- Banner de cookies exibido na primeira visita.
-- Botões:
-  - Aceitar todos
-  - Recusar opcionais
-  - Configurar
-- Modal com categorias:
-  - Necessários
-  - Preferências
-  - Estatísticas
-  - Marketing
-- Escolha salva no navegador por `localStorage`.
-- Link “Configurações de cookies” no rodapé.
-- Banner também disponível na Política de Privacidade.
-- Layout responsivo para desktop, tablet e celular.
-
-## Preparação para Analytics, Ads e Pixel
-Scripts opcionais devem ser adicionados com este formato:
-
-```html
-<script type="text/plain" data-cookie-category="analytics">
-  // Google Analytics ou Microsoft Clarity
-</script>
-
-<script type="text/plain" data-cookie-category="marketing">
-  // Google Ads ou Meta Pixel
-</script>
-```
-
-Eles somente serão ativados após autorização para a respectiva categoria.
+# A7 One — V20 Landing Page Criação de Sites
 
 ## Importante
-Atualmente o site está preparado para as ferramentas, mas nenhum ID de Google Analytics,
-Google Ads ou Meta Pixel foi inserido neste pacote.
+Este pacote NÃO instala o Google Tag Manager.
+
+Mantém:
+- Site institucional
+- Política de Privacidade
+- Banner de cookies
+- Verificação de domínio da Meta
+
+Adiciona:
+- `pages/criacao-de-sites.html`
+- `landing.css`
+- `landing.js`
+- `robots.txt`
+- `sitemap.xml`
 
 ## Publicação
-Descompacte o ZIP e envie todo o conteúdo interno para a raiz do mesmo repositório GitHub.
+1. Descompacte o ZIP.
+2. Entre na raiz do repositório no GitHub.
+3. Use `Add file` → `Upload files`.
+4. Arraste todo o conteúdo interno.
+5. Confirme o commit na branch `main`.
 
-Cache atualizado: 1784231502
+A Landing Page ficará em:
+`https://a7one.com.br/pages/criacao-de-sites`
+
+Cache: 1784663442
