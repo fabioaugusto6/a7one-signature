@@ -290,3 +290,84 @@
   .faq-list summary{font-size:16px}
   .lp-final-cta{padding:80px 0}.lp-final-cta h2{font-size:43px;letter-spacing:-2.6px}
 }
+
+
+/* V23 — ajustes finais */
+.hero-headline span,
+.hero-headline em{display:block}
+.hero-headline em{white-space:nowrap}
+
+.lp-button-whatsapp .whatsapp-mark{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:19px;
+  height:19px;
+  border:1px solid rgba(255,255,255,.55);
+  border-radius:50%;
+  font-size:10px;
+  line-height:1;
+}
+
+.hero-price-badge b{
+  display:block;
+  margin-top:12px;
+  padding-top:10px;
+  border-top:1px solid rgba(255,255,255,.12);
+  color:#d9e5f8;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+.solution-card{
+  display:flex;
+  flex-direction:column;
+  min-height:205px;
+  overflow:hidden;
+  text-align:left;
+}
+
+.solution-card h3{
+  min-height:54px;
+  margin:0 0 18px;
+  color:#f6f8fc;
+  font-size:16px;
+  font-weight:750;
+  line-height:1.15;
+  letter-spacing:-.45px;
+}
+
+.solution-card h3 span{display:block}
+
+.solution-card p{
+  margin:auto 0 0;
+  padding-top:14px;
+  border-top:1px solid rgba(255,255,255,.07);
+  color:#a0aab6;
+  font-size:12px;
+  line-height:1.55;
+}
+
+.types-note{
+  align-items:start;
+  padding:27px 30px;
+}
+
+.types-note strong{
+  padding-top:1px;
+  line-height:1.4;
+}
+
+.types-note p{
+  padding-left:10px;
+}
+
+@media(max-width:720px){
+  .hero-headline em{white-space:normal}
+  .solution-card{min-height:180px}
+  .solution-card h3{min-height:auto;font-size:17px}
+  .types-note{padding:22px}
+  .types-note p{padding-left:0}
+}
