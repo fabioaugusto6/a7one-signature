@@ -1,12 +1,24 @@
-# A7 One — V25 LP Criação de Sites
+# A7 One — V26 LP Criação de Sites
 
-- Headline específica para desktop/tablet
+## Correções
+- Retorno à imagem anterior da avenida
+- Remoção do selo e logo duplicados no fundo
+- Mantido apenas o selo frontal de R$ 799
+- Headline específica para desktop
+- Headline específica para tablet
 - Headline específica para celular
-- “empresa vende” permanece junto
-- Nova avenida realista
-- Painel publicitário A7 One integrado
+- Quebras de texto mais naturais
+- Dani e demais seções preservadas
 - Sem Google Tag Manager
 
-Publicação: descompactar, subir todo o conteúdo na raiz do repositório e confirmar na principal.
+## Publicação
+1. Descompacte o ZIP.
+2. Vá à raiz do repositório no GitHub.
+3. Adicionar arquivo → Carregar arquivos.
+4. Arraste todo o conteúdo interno.
+5. Confirme na branch principal.
 
-Cache: 1784677782
+URL:
+https://a7one.com.br/pages/criacao-de-sites
+
+Cache: 1784678862
