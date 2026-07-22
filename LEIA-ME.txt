@@ -1,0 +1,20 @@
+A7 ONE — CORREÇÃO V29
+
+Este pacote contém somente os arquivos que precisam ser atualizados:
+
+1. pages/criacao-de-sites.html
+2. landing-v29.css
+3. landing.js
+
+IMPORTANTE:
+- Faça o upload na RAIZ do repositório.
+- O novo nome landing-v29.css elimina o cache antigo.
+- Não apague landing.css agora; ele pode continuar no repositório.
+- A página passará a usar landing-v29.css automaticamente.
+
+Headline:
+Enquanto você lê
+esta página,
+alguém procura
+exatamente o que sua
+empresa vende.
